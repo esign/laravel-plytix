@@ -1,13 +1,13 @@
 <?php
 
-namespace :vendor_namespace\Facades;
+namespace Esign\Plytix\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class :studly_package_nameFacade extends Facade
+class PlytixFacade extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return ':package_name';
+        return 'plytix';
     }
 }

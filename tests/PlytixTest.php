@@ -1,8 +1,8 @@
 <?php
 
-namespace :vendor_namespace\Tests;
+namespace Esign\Plytix\Tests;
 
-class :studly_package_nameTest extends TestCase
+class PlytixTest extends TestCase
 {
     /** @test */
     public function test()

@@ -1,17 +1,17 @@
 {
-    "name": ":vendor/:package_slug",
-    "description": ":package_description",
+    "name": "esign/laravel-plytix",
+    "description": "A Laravel SDK for the Plytix API",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "esign",
+        "plytix"
     ],
-    "homepage": "https://github.com/:vendor/:package_slug",
+    "homepage": "https://github.com/esign/laravel-plytix",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Jordy Van der Haegen",
+            "email": "jordy.vanderhaegen@gmail.com",
             "role": "Developer"
         }
     ],
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            ":vendor_namespace_escaped\\": "src"
+            "Esign\\Plytix\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":vendor_namespace_escaped\\Tests\\": "tests"
+            "Esign\\Plytix\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                ":vendor_namespace_escaped\\:studly_package_nameServiceProvider"
+                "Esign\\Plytix\\PlytixServiceProvider"
             ],
             "aliases": {
-                ":studly_package_name": ":vendor_namespace_escaped\\Facades\\:studly_package_nameFacade"
+                "Plytix": "Esign\\Plytix\\Facades\\PlytixFacade"
             }
         }
     },
