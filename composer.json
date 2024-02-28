@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^8.2",
         "illuminate/support": "^10.0",
         "saloonphp/rate-limit-plugin": "^2.0",
         "saloonphp/saloon": "^3.6"
