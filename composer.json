@@ -17,12 +17,14 @@
     ],
     "require": {
         "php": "^8.0",
-        "illuminate/support": "^8.0"
+        "illuminate/support": "^10.0",
+        "saloonphp/rate-limit-plugin": "^2.0",
+        "saloonphp/saloon": "^3.6"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.5",
-        "orchestra/testbench": "^6.0",
-        "phpunit/phpunit": "^9.0"
+        "orchestra/testbench": "^8.0",
+        "phpunit/phpunit": "^10.0"
     },
     "autoload": {
         "psr-4": {
@@ -45,10 +47,7 @@
         "laravel": {
             "providers": [
                 "Esign\\Plytix\\PlytixServiceProvider"
-            ],
-            "aliases": {
-                "Plytix": "Esign\\Plytix\\Facades\\PlytixFacade"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
