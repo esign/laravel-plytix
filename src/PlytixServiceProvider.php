@@ -16,10 +16,6 @@ class PlytixServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom($this->configPath(), 'plytix');
-
-        $this->app->singleton('plytix', function () {
-            return new Plytix;
-        });
     }
 
     protected function configPath(): string
