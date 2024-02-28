@@ -24,7 +24,8 @@ class UpdateProductRequestTest extends TestCase
             payload: [
             'sku' => '12345',
             'label' => 'Black Kettle',
-        ]));
+        ]
+        ));
 
         $mockClient->assertSent(UpdateProductRequest::class);
         $this->assertEquals('12345', $response->json('data.0.sku'));

@@ -21,6 +21,6 @@ class PlytixTokenAuthenticator implements Authenticator
 
     public function hasExpired(): bool
     {
-        return $this->expiresAt->getTimestamp() <= (new DateTimeImmutable)->getTimestamp();
+        return $this->expiresAt->getTimestamp() <= (new DateTimeImmutable())->getTimestamp();
     }
 }

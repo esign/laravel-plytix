@@ -20,4 +20,4 @@ abstract class TestCase extends BaseTestCase
     {
         return [PlytixServiceProvider::class];
     }
-} 
+}

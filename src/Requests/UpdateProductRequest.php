@@ -14,7 +14,8 @@ class UpdateProductRequest extends Request implements HasBody
     protected Method $method = Method::PATCH;
 
     public function __construct(protected string $productId, protected array $payload)
-    {}
+    {
+    }
 
     public function resolveEndpoint(): string
     {
