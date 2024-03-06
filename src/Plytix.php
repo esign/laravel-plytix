@@ -2,16 +2,19 @@
 
 namespace Esign\Plytix;
 
+use Esign\Plytix\Pagination\PagedPaginator;
 use Esign\Plytix\Requests\TokenRequest;
 use Illuminate\Support\Facades\Cache;
 use Saloon\Contracts\Authenticator;
 use Saloon\Http\Connector;
+use Saloon\Http\Request;
+use Saloon\PaginationPlugin\Contracts\HasPagination;
 use Saloon\RateLimitPlugin\Contracts\RateLimitStore;
 use Saloon\RateLimitPlugin\Stores\LaravelCacheStore;
 use Saloon\RateLimitPlugin\Traits\HasRateLimits;
 use Saloon\Traits\Plugins\AlwaysThrowOnErrors;
 
-class Plytix extends Connector
+class Plytix extends Connector implements HasPagination
 {
     use AlwaysThrowOnErrors;
     use HasRateLimits;
@@ -56,5 +59,13 @@ class Plytix extends Connector
     protected function resolveLimits(): array
     {
         return config('plytix.rate_limiting.limits');
+    }
+
+    public function paginate(Request $request): PagedPaginator
+    {
+        return new PagedPaginator(
+            connector: $this,
+            request: $request,
+        );
     }
 }

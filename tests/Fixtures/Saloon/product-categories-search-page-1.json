@@ -1,0 +1,26 @@
+{
+    "data": [
+        {
+            "id": "5cf4d55eb694740001006ed1",
+            "n_children": 1,
+            "name": "Kitchen Sinks"
+        },
+        {
+            "id": "5cf4d561b694740001006ed2",
+            "n_children": 3,
+            "name": "Kitchen Faucets"
+        },
+        {
+            "id": "5cf69f4d568c1c001c039c76",
+            "n_children": 2,
+            "name": "Bathroom Faucets"
+        }
+    ],
+    "pagination": {
+        "count": 3,
+        "order": null,
+        "page": 1,
+        "page_size": 3,
+        "total_count": 6
+    }
+}
