@@ -1,0 +1,55 @@
+{
+    "data": [
+        {
+            "id": "5cf4d55eb694740001006ed1",
+            "modified": "2024-03-05T12:28:32.826000+00:00",
+            "n_children": 0,
+            "name": "Random Category 1",
+            "order": "1",
+            "parents_ids": [
+                "5cf4d561b694740001006ed2",
+                "5cf69f4d568c1c001c039c76"
+            ],
+            "path": [
+                "Random Parent 1",
+                "Random Parent 2",
+                "Random Category 1"
+            ],
+            "slug": "random-category-1"
+        },
+        {
+            "id": "5cf69f4d568c1c001c039c76",
+            "modified": "2024-03-05T11:59:56.348000+00:00",
+            "n_children": 1,
+            "name": "Random Category 2",
+            "order": "1",
+            "parents_ids": [
+                "5cf4d561b694740001006ed2"
+            ],
+            "path": [
+                "Random Parent 1",
+                "Random Category 2"
+            ],
+            "slug": "random-category-2"
+        },
+        {
+            "id": "5cf4d561b694740001006ed2",
+            "modified": "2024-03-05T11:59:39.552000+00:00",
+            "n_children": 1,
+            "name": "Random Parent 1",
+            "order": "1",
+            "parents_ids": [],
+            "path": [
+                "Random Parent 1"
+            ],
+            "slug": "random-parent-1"
+        }
+    ],
+    "pagination": {
+        "count": 3,
+        "order": null,
+        "page": 1,
+        "page_size": 25,
+        "total_count": 3
+    }
+}

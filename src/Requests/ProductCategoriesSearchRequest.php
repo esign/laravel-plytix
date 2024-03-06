@@ -2,9 +2,11 @@
 
 namespace Esign\Plytix\Requests;
 
+use Esign\Plytix\DataTransferObjects\ProductCategory;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
+use Saloon\Http\Response;
 use Saloon\PaginationPlugin\Contracts\Paginatable;
 use Saloon\Traits\Body\HasJsonBody;
 
@@ -17,5 +19,12 @@ class ProductCategoriesSearchRequest extends Request implements HasBody, Paginat
     public function resolveEndpoint(): string
     {
         return '/api/v1/categories/product/search';
+    }
+
+    public function createDtoFromResponse(Response $response): array
+    {
+        return array_map(function (array $productCategory) {
+            return ProductCategory::from($productCategory);
+        }, $response->json('data'));
     }
 }

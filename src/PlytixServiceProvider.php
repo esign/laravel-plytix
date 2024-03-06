@@ -3,6 +3,7 @@
 namespace Esign\Plytix;
 
 use Illuminate\Support\ServiceProvider;
+use Spatie\LaravelData\LaravelDataServiceProvider;
 
 class PlytixServiceProvider extends ServiceProvider
 {
@@ -16,6 +17,7 @@ class PlytixServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom($this->configPath(), 'plytix');
+        $this->app->register(LaravelDataServiceProvider::class);
     }
 
     protected function configPath(): string
