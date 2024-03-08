@@ -1,6 +1,6 @@
 <?php
 
-use Saloon\RateLimitPlugin\Limit;
+use Esign\Plytix\Enums\RateLimitingPlan;
 
 return [
     /**
@@ -31,10 +31,7 @@ return [
         /**
          * The rate limits to be used for the Plytix API.
          */
-        'limits' => [
-            Limit::allow(20)->everySeconds(10),
-            Limit::allow(2000)->everyHour(),
-        ],
+        'plan' => RateLimitingPlan::FREE,
 
         /**
          * The cache store to be used for the Plytix rate limits.
