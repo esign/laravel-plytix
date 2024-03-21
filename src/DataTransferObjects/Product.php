@@ -26,6 +26,8 @@ class Product extends Data
         public readonly array $attributes,
         #[DataCollectionOf(ProductCategory::class)]
         public readonly ?array $categories,
+        #[DataCollectionOf(Asset::class)]
+        public readonly ?array $assets,
     ) {
     }
 }

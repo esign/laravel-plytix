@@ -1,6 +1,16 @@
 {
     "data": [
         {
+            "categories": [
+                {
+                    "id": "5ec383adf18d516fbbac718d"
+                }
+            ],
+            "assets": [
+                {
+                    "id": "5c483ee8eb9139000154dd5e"
+                }
+            ],
             "attributes": {
                 "colorways": [
                     "Coco"
@@ -42,6 +52,16 @@
             }
         },
         {
+            "categories": [
+                {
+                    "id": "5ec383adf18d516fbbac718d"
+                }
+            ],
+            "assets": [
+                {
+                    "id": "5c483ee8eb9139000154dd5e"
+                }
+            ],
             "_parent_id": "5ec383adf18d516fbbac718d",
             "attributes": {
                 "colorways": [
@@ -84,6 +104,16 @@
             }
         },
         {
+            "categories": [
+                {
+                    "id": "5ec383adf18d516fbbac718d"
+                }
+            ],
+            "assets": [
+                {
+                    "id": "5c483ee8eb9139000154dd5e"
+                }
+            ],
             "_parent_id": "5ec383adf18d516fbbac718d",
             "attributes": {
                 "colorways": [
@@ -129,6 +159,16 @@
             }
         },
         {
+            "categories": [
+                {
+                    "id": "5ec383adf18d516fbbac718d"
+                }
+            ],
+            "assets": [
+                {
+                    "id": "5c483ee8eb9139000154dd5e"
+                }
+            ],
             "_parent_id": "5ec383adf18d516fbbac718d",
             "attributes": {
                 "colorways": [
@@ -174,6 +214,16 @@
             }
         },
         {
+            "categories": [
+                {
+                    "id": "5ec383adf18d516fbbac718d"
+                }
+            ],
+            "assets": [
+                {
+                    "id": "5c483ee8eb9139000154dd5e"
+                }
+            ],
             "_parent_id": "5ec383adf18d516fbbac718d",
             "attributes": {
                 "colorways": [
@@ -213,6 +263,16 @@
             }
         },
         {
+            "categories": [
+                {
+                    "id": "5ec383adf18d516fbbac718d"
+                }
+            ],
+            "assets": [
+                {
+                    "id": "5c483ee8eb9139000154dd5e"
+                }
+            ],
             "_parent_id": "5ec383adf28c84a676ac718d",
             "attributes": {
                 "colorways": [
@@ -276,6 +336,16 @@
             }
         },
         {
+            "categories": [
+                {
+                    "id": "5ec383adf18d516fbbac718d"
+                }
+            ],
+            "assets": [
+                {
+                    "id": "5c483ee8eb9139000154dd5e"
+                }
+            ],
             "_parent_id": "5ec383adf28c84a676ac718d",
             "attributes": {
                 "colorways": [
@@ -345,6 +415,16 @@
             }
         },
         {
+            "categories": [
+                {
+                    "id": "5ec383adf18d516fbbac718d"
+                }
+            ],
+            "assets": [
+                {
+                    "id": "5c483ee8eb9139000154dd5e"
+                }
+            ],
             "_parent_id": "5ec383adf28c84a676ac718d",
             "attributes": {
                 "colorways": [

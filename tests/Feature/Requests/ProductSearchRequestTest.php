@@ -2,7 +2,9 @@
 
 namespace Esign\Plytix\Tests\Feature\Requests;
 
+use Esign\Plytix\DataTransferObjects\Asset;
 use Esign\Plytix\DataTransferObjects\Product;
+use Esign\Plytix\DataTransferObjects\ProductCategory;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\ProductSearchRequest;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
@@ -31,7 +33,7 @@ class ProductSearchRequestTest extends TestCase
     public function it_can_create_a_dto_from_a_response_with_all_attributes()
     {
         $plytix = new Plytix();
-        $mockClient = MockClient::global([
+        MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
             MockResponseFixture::make(fixtureName: 'product-search-with-all-attributes.json', status: 200),
         ]);
@@ -50,5 +52,9 @@ class ProductSearchRequestTest extends TestCase
         $this->assertEquals('2020-05-19 07:03:05', $products[0]->modified->format('Y-m-d H:i:s'));
         $this->assertNull($products[0]->created);
         $this->assertEquals(false, $products[0]->attributes['discontinued']);
+        $this->assertInstanceOf(ProductCategory::class, $products[0]->categories[0]);
+        $this->assertEquals('5ec383adf18d516fbbac718d', $products[0]->categories[0]->id);
+        $this->assertInstanceOf(Asset::class, $products[0]->assets[0]);
+        $this->assertEquals('5c483ee8eb9139000154dd5e', $products[0]->assets[0]->id);
     }
 }
