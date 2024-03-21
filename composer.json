@@ -20,7 +20,7 @@
         "illuminate/support": "^10.0",
         "saloonphp/pagination-plugin": "^2.2",
         "saloonphp/rate-limit-plugin": "^2.0",
-        "saloonphp/saloon": "^3.6",
+        "saloonphp/saloon": "^3.8",
         "spatie/laravel-data": "^4.2"
     },
     "require-dev": {
