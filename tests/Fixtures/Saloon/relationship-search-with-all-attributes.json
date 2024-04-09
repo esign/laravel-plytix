@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "id": "64ad0d69573a2e83cd38b146",
+            "label": "gift_pack",
+            "name": "Gift pack",
+            "modified": "2023-07-11T08:06:01.419000+00:00",
+            "created": "2023-07-11T08:06:01.419000+00:00"
+        }
+    ],
+    "pagination": {
+        "count": 1,
+        "order": "name",
+        "page": 1,
+        "page_size": 25,
+        "total_count": 4
+    }
+}
