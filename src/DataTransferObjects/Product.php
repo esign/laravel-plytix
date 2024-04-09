@@ -24,6 +24,8 @@ class Product extends Data
         #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d\TH:i:s.uP')]
         public readonly ?Carbon $created,
         public readonly array $attributes,
+        #[DataCollectionOf(RelationshipInformation::class)]
+        public readonly ?array $relationships,
         #[DataCollectionOf(ProductCategory::class)]
         public readonly ?array $categories,
         #[DataCollectionOf(Asset::class)]

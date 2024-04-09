@@ -45,6 +45,16 @@
             "label": "Backpack Venice - Coco",
             "modified": "2020-05-19T07:03:05.787000+00:00",
             "num_variations": 5,
+            "relationships": [
+                {
+                    "related_products": [
+                        { "product_id": "5ec383c6421a5e26d9ac71b1", "quantity": 1 },
+                        { "product_id": "5ec383c8421a5e26d9ac71bb", "quantity": 1 }
+                    ],
+                    "relationship_id": "64ad0d69573a2e83cd38b146",
+                    "relationship_label": "related_products"
+                }
+            ],
             "sku": "1013",
             "status": "Draft",
             "thumbnail": {
