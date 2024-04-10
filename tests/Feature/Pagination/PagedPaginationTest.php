@@ -87,4 +87,27 @@ class PagedPaginationTest extends TestCase
             }
         });
     }
+
+    /** @test */
+    public function it_can_use_an_empty_string_as_pagination_order_default()
+    {
+        $plytix = new Plytix();
+        $mockClient = MockClient::global([
+            MockResponseFixture::make(fixtureName: 'token.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'product-categories-search-page-1.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'product-categories-search-page-2.json', status: 200),
+        ]);
+
+        $paginator = $plytix->paginate(new ProductCategoriesSearchRequest());
+
+        foreach ($paginator as $response) {
+            // Let's loop so the paginator fetches all pages
+        }
+
+        $mockClient->assertSent(function (Request $request, Response $response) {
+            if ($request instanceof ProductCategoriesSearchRequest) {
+                return Arr::get($request->body()->all(), 'pagination.order') === '';
+            }
+        });
+    }
 }

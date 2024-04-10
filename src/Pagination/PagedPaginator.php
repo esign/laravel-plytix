@@ -11,7 +11,7 @@ use Saloon\Traits\Body\HasJsonBody;
 class PagedPaginator extends BasePagedPaginator
 {
     protected ?int $perPageLimit = 25;
-    protected ?string $paginationOrder = null;
+    protected string $paginationOrder = '';
 
     protected function isLastPage(Response $response): bool
     {
@@ -48,7 +48,7 @@ class PagedPaginator extends BasePagedPaginator
         return $request;
     }
 
-    public function setPaginationOrder(?string $order): static
+    public function setPaginationOrder(string $order): static
     {
         $this->paginationOrder = $order;
 
