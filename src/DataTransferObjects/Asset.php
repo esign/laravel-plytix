@@ -2,10 +2,10 @@
 
 namespace Esign\Plytix\DataTransferObjects;
 
+use Esign\Plytix\DataTransferObjects\Casts\PlytixDateTimeCast;
 use Illuminate\Support\Carbon;
 use Spatie\LaravelData\Attributes\MapInputName;
 use Spatie\LaravelData\Attributes\WithCast;
-use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\Mappers\SnakeCaseMapper;
 
@@ -28,9 +28,9 @@ class Asset extends Data
         public readonly ?string $status,
         public readonly ?string $thumbnail,
         public readonly ?string $url,
-        #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d\TH:i:s.uP')]
+        #[WithCast(PlytixDateTimeCast::class)]
         public readonly ?Carbon $created,
-        #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d\TH:i:s.uP')]
+        #[WithCast(PlytixDateTimeCast::class)]
         public readonly ?Carbon $modified,
     ) {}
 }
