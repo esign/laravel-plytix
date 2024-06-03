@@ -1,0 +1,23 @@
+{
+    "data": [
+      {
+        "assigned": false,
+        "categories": [],
+        "content_type": "image/jpeg",
+        "created": "2019-01-26T14:26:24.826240+00:00",
+        "extension": "jpg",
+        "file_modified": "2019-01-26T14:26:24.826306",
+        "file_size": 31885,
+        "file_type": "IMAGES",
+        "filename": "kettle_blue.jpg",
+        "id": "5c4c6e10ca59f4061b800ffa",
+        "modified": "2019-01-26T14:26:24.827123+00:00",
+        "n_catalogs": 0,
+        "n_products": 0,
+        "public": true,
+        "status": "ACTIVE",
+        "thumbnail": "https://files.plytix.com/api/v1.1/thumb/kettle_blue.jpg",
+        "url": "https://files.plytix.com/api/v1.1/file/public_files/assets/kettle_blue.jpg"
+      }
+    ]
+  }
