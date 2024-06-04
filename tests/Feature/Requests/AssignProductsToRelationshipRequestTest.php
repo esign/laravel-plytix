@@ -4,8 +4,6 @@ namespace Esign\Plytix\Tests\Feature\Requests;
 
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\AssignProductsToRelationshipRequest;
-use Esign\Plytix\Requests\CreateProductCategoryRequest;
-use Esign\Plytix\Requests\CreateRelationshipRequest;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;
