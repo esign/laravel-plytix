@@ -31,8 +31,17 @@ class CreateProductSubcategoryRequestTest extends TestCase
 
         $subcategory = $response->dto()[0];
         $mockClient->assertSent(CreateProductSubcategoryRequest::class);
+
+        $this->assertEquals('5cfa0c1e3da03100019ba90f', $subcategory->id);
         $this->assertEquals('Apron', $subcategory->name);
-        $this->assertEquals('5cfa05273da03100019ba90e', $subcategory->parentsIds[0]);
+        $this->assertEquals('1', $subcategory->order);
         $this->assertEquals('apron', $subcategory->slug);
+        $this->assertEquals(0, $subcategory->nChildren);
+        $this->assertIsArray($subcategory->parentsIds);
+        $this->assertCount(1, $subcategory->parentsIds);
+        $this->assertEquals('5cfa05273da03100019ba90e', $subcategory->parentsIds[0]);
+        $this->assertIsArray($subcategory->path);
+        $this->assertCount(2, $subcategory->path);
+        $this->assertEquals('Kitchen Sinks', $subcategory->path[0]);
     }
 }

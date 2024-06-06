@@ -27,5 +27,9 @@ class AssignProductsToRelationshipRequestTest extends TestCase
         
         $mockClient->assertSent(AssignProductsToRelationshipRequest::class);
         $this->assertEquals('5d8a50b547397aea2a603079', $relationshipInformation->relationshipId);
+        $this->assertEquals('contains', $relationshipInformation->relationshipLabel);
+        $this->assertIsArray($relationshipInformation->relatedProducts);
+        $this->assertCount(4, $relationshipInformation->relatedProducts);
+        $this->assertEquals(9, $relationshipInformation->relatedProducts[1]->quantity);
     }
 }

@@ -3,7 +3,6 @@
 namespace Esign\Plytix\Tests\Feature\Requests;
 
 use Esign\Plytix\Plytix;
-use Esign\Plytix\Requests\CreateProductCategoryRequest;
 use Esign\Plytix\Requests\CreateRelationshipRequest;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
@@ -29,5 +28,6 @@ class CreateRelationshipRequestTest extends TestCase
         $mockClient->assertSent(CreateRelationshipRequest::class);
         $this->assertEquals('12345', $relationship->name);
         $this->assertEquals('12345', $relationship->label);
+        $this->assertEquals('665d88e1ffa3da952052dbf0', $relationship->id);
     }
 }

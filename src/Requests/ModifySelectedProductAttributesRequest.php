@@ -3,14 +3,11 @@
 namespace Esign\Plytix\Requests;
 
 use Esign\Plytix\DataTransferObjects\Product;
-use Esign\Plytix\DataTransferObjects\ProductCategory;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
 use Saloon\Traits\Body\HasJsonBody;
-
-
 
 class ModifySelectedProductAttributesRequest extends Request implements HasBody
 {

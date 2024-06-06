@@ -24,8 +24,21 @@ class CreateAssetRequestTest extends TestCase
             'filename' => 'kettle_blue.jpg',
             'url' => 'https://www.plytix.com/hubfs/Kitchen%20and%20Home%20Products/Enjoy%20Mug%20-%20Blue.jpg',
         ]));
+        $asset = $response->dto()[0];
 
         $mockClient->assertSent(CreateAssetRequest::class);
-        $this->assertEquals('kettle_blue.jpg', $response->json('data.0.filename'));
+        $this->assertEquals('5c4c6e10ca59f4061b800ffa', $asset->id);
+        $this->assertEquals(false, $asset->assigned);
+        $this->assertEquals('jpg', $asset->extension);
+        $this->assertEquals('kettle_blue.jpg', $asset->filename);
+        $this->assertEquals('image/jpeg', $asset->contentType);
+        $this->assertEquals(31885, $asset->fileSize);
+        $this->assertEquals('IMAGES', $asset->fileType);
+        $this->assertEquals(0, $asset->nCatalogs);
+        $this->assertEquals(0, $asset->nProducts);
+        $this->assertEquals(true, $asset->public);
+        $this->assertEquals('ACTIVE', $asset->status);
+        $this->assertEquals('https://files.plytix.com/api/v1.1/thumb/kettle_blue.jpg', $asset->thumbnail);
+        $this->assertEquals('https://files.plytix.com/api/v1.1/file/public_files/assets/kettle_blue.jpg', $asset->url);
     }
 }

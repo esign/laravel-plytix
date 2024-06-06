@@ -29,5 +29,22 @@ class ModifySelectedProductAttributesRequestTest extends TestCase
         
         $mockClient->assertSent(ModifySelectedProductAttributesRequest::class);
         $this->assertEquals('5c4ed8002f0985001e233275', $product->id);
+        $this->assertEquals('Sample - 001', $product->sku);
+        $this->assertEquals('Product ~ 1 - patch example', $product->label);
+        $this->assertEquals('Completed', $product->status);
+        $this->assertEquals(0, $product->numVariations);
+
+        $this->assertIsArray($product->attributes);
+        $this->assertCount(2, $product->attributes);
+
+        $this->assertIsArray($product->categories);
+        $this->assertCount(1, $product->categories);
+        
+        $this->assertIsArray($product->assets);
+        $this->assertCount(1, $product->assets);
+
+        $this->assertEquals(["Blue"], $product->attributes["color_create_a_multiselect_type_attribute"]);
+        $this->assertEquals('Kettles & Teapots', $product->categories[0]->name);
+        $this->assertEquals('Kettle handle - White.png', $product->assets[0]->filename);
     }
 }
