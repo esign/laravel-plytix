@@ -1,0 +1,112 @@
+
+{
+    "data": [
+      {
+        "filter_type": "TextAttribute",
+        "groups": [
+          "5c582a979e877f04666c649c"
+        ],
+        "id": "5c19ffda0b64d40460c50d1e",
+        "label": "description",
+        "name": "Description",
+        "type_class": "MultilineAttribute"
+      },
+      {
+        "filter_type": "TextAttribute",
+        "groups": [
+          "5c582a979e877f04666c649c"
+        ],
+        "id": "5c582c819e877f04666c64a8",
+        "label": "feature_description",
+        "name": "Feature Description",
+        "type_class": "MultilineAttribute"
+      },
+      {
+        "filter_type": "TextAttribute",
+        "groups": [
+          "5c59ad3d9e877f04655791c2"
+        ],
+        "id": "5c59ad8a9e877f04666c676c",
+        "label": "description_de",
+        "name": "Description DE",
+        "type_class": "MultilineAttribute"
+      },
+      {
+        "filter_type": "TextAttribute",
+        "groups": [
+          "5c59ad4e9e877f04655791c3"
+        ],
+        "id": "5c59ad929e877f04666c676e",
+        "label": "description_it",
+        "name": "Description IT",
+        "type_class": "MultilineAttribute"
+      },
+      {
+        "filter_type": "TextAttribute",
+        "groups": [
+          "5c59ad5a9e877f0467b57c6a"
+        ],
+        "id": "5c59ad9d9e877f04655791c6",
+        "label": "description_es",
+        "name": "Description ES",
+        "type_class": "MultilineAttribute"
+      },
+      {
+        "filter_type": "TextAttribute",
+        "groups": [
+          "5c59ad639e877f04655791c4"
+        ],
+        "id": "5c59ada39e877f04655791c8",
+        "label": "description_dk",
+        "name": "Description DK",
+        "type_class": "MultilineAttribute"
+      },
+      {
+        "filter_type": "TextAttribute",
+        "groups": [
+          "5c59ad3d9e877f04655791c2"
+        ],
+        "id": "5c59adb79e877f04666c6770",
+        "label": "feature_description_de",
+        "name": "Feature Description DE",
+        "type_class": "MultilineAttribute"
+      },
+      {
+        "filter_type": "TextAttribute",
+        "groups": [
+          "5c59ad4e9e877f04655791c3"
+        ],
+        "id": "5c59adbc9e877f04666c6772",
+        "label": "feature_description_it",
+        "name": "Feature Description IT",
+        "type_class": "MultilineAttribute"
+      },
+      {
+        "filter_type": "TextAttribute",
+        "groups": [
+          "5c59ad5a9e877f0467b57c6a"
+        ],
+        "id": "5c59adc39e877f04666c6774",
+        "label": "feature_description_es",
+        "name": "Feature Description ES",
+        "type_class": "MultilineAttribute"
+      },
+      {
+        "filter_type": "TextAttribute",
+        "groups": [
+          "5c59ad639e877f04655791c4"
+        ],
+        "id": "5c59adca9e877f0467b57c6e",
+        "label": "feature_description_dk",
+        "name": "Feature Description DK",
+        "type_class": "MultilineAttribute"
+      }
+    ],
+    "pagination": {
+      "count": 10,
+      "order": null,
+      "page": 1,
+      "page_size": 25,
+      "total_count": 82
+    }
+  }
