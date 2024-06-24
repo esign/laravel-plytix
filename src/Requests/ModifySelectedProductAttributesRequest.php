@@ -9,19 +9,20 @@ use Saloon\Http\Request;
 use Saloon\Http\Response;
 use Saloon\Traits\Body\HasJsonBody;
 
-class CreateProductRequest extends Request implements HasBody
+class ModifySelectedProductAttributesRequest extends Request implements HasBody
 {
     use HasJsonBody;
 
-    protected Method $method = Method::POST;
+    protected Method $method = Method::PATCH;
 
-    public function __construct(protected array $payload)
-    {
-    }
+    public function __construct(
+        protected string $productId,
+        protected array $payload
+    ) { }
 
     public function resolveEndpoint(): string
     {
-        return '/api/v1/products';
+        return '/api/v1/products/' . $this->productId;
     }
 
     public function defaultBody(): array

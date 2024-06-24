@@ -1,0 +1,44 @@
+{
+    "data": [
+      {
+        "_parent_id": null,
+        "assets": [
+          {
+            "filename": "Kettle handle - White.png",
+            "id": "5c4ed8002f0985001e233276",
+            "thumbnail": "https://files.plytix.com/api/v1.1/thumb/public_files/pim/assets/d1/6d/8e/5b/5b8e6dd17f7f46000c7e9629/images/00/d8/4e/5c/5c4ed8002f0985001e233276/Kettle handle - White.png",
+            "url": "https://files.plytix.com/api/v1.1/file/public_files/pim/assets/d1/6d/8e/5b/5b8e6dd17f7f46000c7e9629/images/00/d8/4e/5c/5c4ed8002f0985001e233276/Kettle handle - White.png"
+          }
+        ],
+        "attributes": {
+          "color_create_a_multiselect_type_attribute": [
+            "Blue"
+          ],
+          "description_create_a_rich_text_type_attribute": "Try making the description a <b>Rich Text</b> attribute so that you can format the text however you'd like."
+        },
+        "categories": [
+          {
+            "id": "5c4ed7f62f0985001c233279",
+            "name": "Kettles & Teapots",
+            "path": [
+              "Sample Categories",
+              "Kettles & Teapots"
+            ]
+          }
+        ],
+        "created": "2019-01-28T10:22:56.817000+00:00",
+        "id": "5c4ed8002f0985001e233275",
+        "label": "Product ~ 1 - patch example",
+        "modified": "2019-01-28T10:24:44.792000+00:00",
+        "num_variations": 0,
+        "sku": "Sample - 001",
+        "status": "Completed",
+        "thumbnail": {
+          "filename": "assets/d1/6d/8e/5b/5b8e6dd17f7f46000c7e9629/images/00/d8/4e/5c/5c4ed8002f0985001e233276/Kettle handle - White.png",
+          "id": "5c4ed8002f0985001e233276",
+          "thumbnail": "https://files.plytix.com/api/v1.1/thumb/public_files/pim/assets/d1/6d/8e/5b/5b8e6dd17f7f46000c7e9629/images/00/d8/4e/5c/5c4ed8002f0985001e233276/Kettle handle - White.png",
+          "url": "https://files.plytix.com/api/v1.1/thumb/public_files/pim/assets/d1/6d/8e/5b/5b8e6dd17f7f46000c7e9629/images/00/d8/4e/5c/5c4ed8002f0985001e233276/Kettle handle - White.png"
+        }
+      }
+    ]
+  }

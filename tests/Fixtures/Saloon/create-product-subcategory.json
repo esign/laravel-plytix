@@ -1,0 +1,19 @@
+{
+    "data": [
+      {
+        "id": "5cfa0c1e3da03100019ba90f",
+        "modified": "2019-06-07T07:02:54.817539+00:00",
+        "n_children": 0,
+        "name": "Apron",
+        "order": "1",
+        "parents_ids": [
+          "5cfa05273da03100019ba90e"
+        ],
+        "path": [
+          "Kitchen Sinks",
+          "Apron"
+        ],
+        "slug": "apron"
+      }
+    ]
+  }

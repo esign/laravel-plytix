@@ -1,0 +1,11 @@
+{
+    "data": [
+      {
+        "id": "5d0b4ea525abd700016fc037",
+        "label": "in_stock",
+        "name": "In Stock",
+        "groups": [],
+        "type_class": "BooleanAttribute"
+      }
+    ]
+  }
