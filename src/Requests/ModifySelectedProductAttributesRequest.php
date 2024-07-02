@@ -18,7 +18,8 @@ class ModifySelectedProductAttributesRequest extends Request implements HasBody
     public function __construct(
         protected string $productId,
         protected array $payload
-    ) { }
+    ) {
+    }
 
     public function resolveEndpoint(): string
     {

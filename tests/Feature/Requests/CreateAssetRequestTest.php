@@ -4,7 +4,6 @@ namespace Esign\Plytix\Tests\Feature\Requests;
 
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\CreateAssetRequest;
-use Esign\Plytix\Requests\CreateProductRequest;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;

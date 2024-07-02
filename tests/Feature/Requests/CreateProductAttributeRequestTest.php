@@ -23,7 +23,7 @@ class CreateProductAttributeRequestTest extends TestCase
             'name' => 'In stock',
             'type_class' => 'BooleanAttribute',
         ]));
-        
+
         $attribute = $response->dto()[0];
 
         $mockClient->assertSent(CreateProductAttributeRequest::class);

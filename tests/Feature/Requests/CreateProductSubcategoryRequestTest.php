@@ -22,11 +22,11 @@ class CreateProductSubcategoryRequestTest extends TestCase
         ]);
 
         $category = $plytix->send(new CreateProductCategoryRequest([
-            'name' => 'Kitchen Sinks'
+            'name' => 'Kitchen Sinks',
         ]))->dto()[0];
-        
+
         $response = $plytix->send(new CreateProductSubcategoryRequest($category->id, [
-            'name' => 'Apron'
+            'name' => 'Apron',
         ]));
 
         $subcategory = $response->dto()[0];

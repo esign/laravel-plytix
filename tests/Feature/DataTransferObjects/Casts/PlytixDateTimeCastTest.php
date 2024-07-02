@@ -13,7 +13,7 @@ class PlytixDateTimeCastTest extends TestCase
     /** @test */
     public function it_can_cast_plytix_date_times()
     {
-        $class = new class extends Data {
+        $class = new class () extends Data {
             #[WithCast(PlytixDateTimeCast::class)]
             public Carbon $date;
         };

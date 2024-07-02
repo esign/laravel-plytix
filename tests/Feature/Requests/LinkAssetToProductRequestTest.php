@@ -21,7 +21,7 @@ class LinkAssetToProductRequestTest extends TestCase
 
         $response = $plytix->send(new LinkAssetToProductRequest('665db0db744c81d899bb315e', [
             'id' => '5c4ed8002f0985001e233275',
-            'attribute_label' => 'thumbnail'
+            'attribute_label' => 'thumbnail',
         ]));
 
         $asset = $response->dto()[0];

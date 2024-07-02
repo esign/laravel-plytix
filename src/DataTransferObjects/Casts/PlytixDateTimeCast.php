@@ -23,6 +23,4 @@ class PlytixDateTimeCast extends DateTimeInterfaceCast
             timeZone: $timeZone
         );
     }
-
-
 }

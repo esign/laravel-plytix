@@ -3,8 +3,8 @@
 namespace Esign\Plytix\Pagination;
 
 use LogicException;
-use Saloon\Http\Response;
 use Saloon\Http\Request;
+use Saloon\Http\Response;
 use Saloon\PaginationPlugin\PagedPaginator as BasePagedPaginator;
 use Saloon\Traits\Body\HasJsonBody;
 

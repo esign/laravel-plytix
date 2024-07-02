@@ -32,5 +32,6 @@ class Asset extends Data
         public readonly ?Carbon $created,
         #[WithCast(PlytixDateTimeCast::class)]
         public readonly ?Carbon $modified,
-    ) {}
+    ) {
+    }
 }

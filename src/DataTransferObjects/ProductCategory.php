@@ -22,5 +22,6 @@ class ProductCategory extends Data
         public readonly ?array $parentsIds,
         public readonly ?array $path,
         public readonly ?string $slug,
-    ) {}
+    ) {
+    }
 }

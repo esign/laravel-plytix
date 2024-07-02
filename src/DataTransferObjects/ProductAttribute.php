@@ -15,5 +15,6 @@ class ProductAttribute extends Data
         public readonly ?string $label,
         public readonly ?string $name,
         public readonly ?string $typeClass
-    ) {}
+    ) {
+    }
 }

@@ -20,7 +20,7 @@ class CreateProductCategoryRequestTest extends TestCase
         ]);
 
         $response = $plytix->send(new CreateProductCategoryRequest([
-            'name' => 'Kitchen Sinks'
+            'name' => 'Kitchen Sinks',
         ]));
 
         $category = $response->dto()[0];

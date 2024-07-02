@@ -2,7 +2,6 @@
 
 namespace Esign\Plytix\Requests;
 
-use Esign\Plytix\DataTransferObjects\ProductCategory;
 use Esign\Plytix\DataTransferObjects\RelationshipInformation;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
@@ -20,7 +19,8 @@ class AssignProductsToRelationshipRequest extends Request implements HasBody
         protected string $productId,
         protected string $relationshipId,
         protected array $payload
-    ) { }
+    ) {
+    }
 
     public function resolveEndpoint(): string
     {

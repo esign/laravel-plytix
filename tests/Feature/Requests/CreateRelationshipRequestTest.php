@@ -20,11 +20,11 @@ class CreateRelationshipRequestTest extends TestCase
         ]);
 
         $response = $plytix->send(new CreateRelationshipRequest([
-            'name' => '12345'
+            'name' => '12345',
         ]));
 
         $relationship = $response->dto()[0];
-        
+
         $mockClient->assertSent(CreateRelationshipRequest::class);
         $this->assertEquals('12345', $relationship->name);
         $this->assertEquals('12345', $relationship->label);

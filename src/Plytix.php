@@ -2,9 +2,9 @@
 
 namespace Esign\Plytix;
 
-use Esign\Plytix\Pagination\PagedPaginator;
 use Esign\Plytix\Enums\RateLimitingPlan;
 use Esign\Plytix\Exceptions\InvalidConfigurationException;
+use Esign\Plytix\Pagination\PagedPaginator;
 use Esign\Plytix\Requests\TokenRequest;
 use Illuminate\Support\Facades\Cache;
 use Saloon\Contracts\Authenticator;
@@ -12,7 +12,6 @@ use Saloon\Http\Connector;
 use Saloon\Http\Request;
 use Saloon\PaginationPlugin\Contracts\HasPagination;
 use Saloon\RateLimitPlugin\Contracts\RateLimitStore;
-use Saloon\RateLimitPlugin\Limit;
 use Saloon\RateLimitPlugin\Stores\LaravelCacheStore;
 use Saloon\RateLimitPlugin\Traits\HasRateLimits;
 use Saloon\Traits\Plugins\AlwaysThrowOnErrors;

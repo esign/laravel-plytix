@@ -3,8 +3,6 @@
 namespace Esign\Plytix\Tests\Feature\Requests;
 
 use Esign\Plytix\Plytix;
-use Esign\Plytix\Requests\CreateProductCategoryRequest;
-use Esign\Plytix\Requests\CreateRelationshipRequest;
 use Esign\Plytix\Requests\ModifySelectedProductAttributesRequest;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
@@ -22,11 +20,11 @@ class ModifySelectedProductAttributesRequestTest extends TestCase
         ]);
 
         $response = $plytix->send(new ModifySelectedProductAttributesRequest('5c4ed8002f0985001e233275', [
-            'description' => '12345'
+            'description' => '12345',
         ]));
 
         $product = $response->dto()[0];
-        
+
         $mockClient->assertSent(ModifySelectedProductAttributesRequest::class);
         $this->assertEquals('5c4ed8002f0985001e233275', $product->id);
         $this->assertEquals('Sample - 001', $product->sku);
@@ -39,7 +37,7 @@ class ModifySelectedProductAttributesRequestTest extends TestCase
 
         $this->assertIsArray($product->categories);
         $this->assertCount(1, $product->categories);
-        
+
         $this->assertIsArray($product->assets);
         $this->assertCount(1, $product->assets);
 

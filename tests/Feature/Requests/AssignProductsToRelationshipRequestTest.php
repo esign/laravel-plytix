@@ -19,12 +19,12 @@ class AssignProductsToRelationshipRequestTest extends TestCase
             MockResponseFixture::make(fixtureName: 'assign-products-to-relationship.json', status: 201),
         ]);
 
-        $response = $plytix->send(new AssignProductsToRelationshipRequest('productid', 'relationshipid',[
-            'name' => '12345'
+        $response = $plytix->send(new AssignProductsToRelationshipRequest('productid', 'relationshipid', [
+            'name' => '12345',
         ]));
 
         $relationshipInformation = $response->dto()[0];
-        
+
         $mockClient->assertSent(AssignProductsToRelationshipRequest::class);
         $this->assertEquals('5d8a50b547397aea2a603079', $relationshipInformation->relationshipId);
         $this->assertEquals('contains', $relationshipInformation->relationshipLabel);
