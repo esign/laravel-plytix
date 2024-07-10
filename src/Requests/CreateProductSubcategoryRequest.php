@@ -2,26 +2,28 @@
 
 namespace Esign\Plytix\Requests;
 
-use Esign\Plytix\DataTransferObjects\Product;
+use Esign\Plytix\DataTransferObjects\ProductCategory;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
 use Saloon\Traits\Body\HasJsonBody;
 
-class CreateProductRequest extends Request implements HasBody
+class CreateProductSubcategoryRequest extends Request implements HasBody
 {
     use HasJsonBody;
 
     protected Method $method = Method::POST;
 
-    public function __construct(protected array $payload)
-    {
+    public function __construct(
+        protected string $categoryId,
+        protected array $payload
+    ) {
     }
 
     public function resolveEndpoint(): string
     {
-        return '/api/v1/products';
+        return '/api/v1/categories/product/' . $this->categoryId;
     }
 
     public function defaultBody(): array
@@ -31,8 +33,8 @@ class CreateProductRequest extends Request implements HasBody
 
     public function createDtoFromResponse(Response $response): mixed
     {
-        return array_map(function (array $product) {
-            return Product::from($product);
+        return array_map(function (array $productCategory) {
+            return ProductCategory::from($productCategory);
         }, $response->json('data'));
     }
 }

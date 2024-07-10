@@ -2,14 +2,14 @@
 
 namespace Esign\Plytix\Requests;
 
-use Esign\Plytix\DataTransferObjects\Product;
+use Esign\Plytix\DataTransferObjects\ProductAttribute;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
 use Saloon\Traits\Body\HasJsonBody;
 
-class CreateProductRequest extends Request implements HasBody
+class CreateProductAttributeRequest extends Request implements HasBody
 {
     use HasJsonBody;
 
@@ -21,7 +21,7 @@ class CreateProductRequest extends Request implements HasBody
 
     public function resolveEndpoint(): string
     {
-        return '/api/v1/products';
+        return '/api/v1/attributes/product';
     }
 
     public function defaultBody(): array
@@ -31,8 +31,8 @@ class CreateProductRequest extends Request implements HasBody
 
     public function createDtoFromResponse(Response $response): mixed
     {
-        return array_map(function (array $product) {
-            return Product::from($product);
+        return array_map(function (array $attribute) {
+            return ProductAttribute::from($attribute);
         }, $response->json('data'));
     }
 }

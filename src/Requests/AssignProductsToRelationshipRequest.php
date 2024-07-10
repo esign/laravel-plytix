@@ -2,26 +2,29 @@
 
 namespace Esign\Plytix\Requests;
 
-use Esign\Plytix\DataTransferObjects\Product;
+use Esign\Plytix\DataTransferObjects\RelationshipInformation;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
 use Saloon\Traits\Body\HasJsonBody;
 
-class CreateProductRequest extends Request implements HasBody
+class AssignProductsToRelationshipRequest extends Request implements HasBody
 {
     use HasJsonBody;
 
     protected Method $method = Method::POST;
 
-    public function __construct(protected array $payload)
-    {
+    public function __construct(
+        protected string $productId,
+        protected string $relationshipId,
+        protected array $payload
+    ) {
     }
 
     public function resolveEndpoint(): string
     {
-        return '/api/v1/products';
+        return '/api/v1/products/' . $this->productId . "/relationships/" . $this->relationshipId;
     }
 
     public function defaultBody(): array
@@ -31,8 +34,8 @@ class CreateProductRequest extends Request implements HasBody
 
     public function createDtoFromResponse(Response $response): mixed
     {
-        return array_map(function (array $product) {
-            return Product::from($product);
+        return array_map(function (array $relationshipInfo) {
+            return RelationshipInformation::from($relationshipInfo);
         }, $response->json('data'));
     }
 }
