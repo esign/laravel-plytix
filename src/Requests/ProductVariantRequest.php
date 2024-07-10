@@ -2,7 +2,7 @@
 
 namespace Esign\Plytix\Requests;
 
-use Esign\Plytix\DataTransferObjects\ProductVariation;
+use Esign\Plytix\DataTransferObjects\ProductVariant;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
@@ -10,7 +10,7 @@ use Saloon\Http\Response;
 use Saloon\PaginationPlugin\Contracts\Paginatable;
 use Saloon\Traits\Body\HasJsonBody;
 
-class ProductVariationsRequest extends Request implements HasBody, Paginatable
+class ProductVariantRequest extends Request implements HasBody, Paginatable
 {
     use HasJsonBody;
 
@@ -23,13 +23,13 @@ class ProductVariationsRequest extends Request implements HasBody, Paginatable
 
     public function resolveEndpoint(): string
     {
-        return '/api/v1/products/' . $this->productId . '/variations';
+        return '/api/v1/products/' . $this->productId . '/variants';
     }
 
     public function createDtoFromResponse(Response $response): mixed
     {
         return array_map(function (array $variation) {
-            return ProductVariation::from($variation);
+            return ProductVariant::from($variation);
         }, $response->json('data'));
     }
 }

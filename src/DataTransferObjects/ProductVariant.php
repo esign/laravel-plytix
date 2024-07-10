@@ -11,7 +11,7 @@ use Spatie\LaravelData\Data;
 use Spatie\LaravelData\Mappers\SnakeCaseMapper;
 
 #[MapInputName(SnakeCaseMapper::class)]
-class ProductVariation extends Data
+class ProductVariant extends Data
 {
     public function __construct(
         public readonly string $id,
