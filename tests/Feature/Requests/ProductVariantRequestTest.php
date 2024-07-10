@@ -5,7 +5,6 @@ namespace Esign\Plytix\Tests\Feature\Requests;
 use Esign\Plytix\DataTransferObjects\Asset;
 use Esign\Plytix\DataTransferObjects\Product;
 use Esign\Plytix\DataTransferObjects\ProductCategory;
-use Esign\Plytix\DataTransferObjects\ProductVariant;
 use Esign\Plytix\DataTransferObjects\RelatedProduct;
 use Esign\Plytix\DataTransferObjects\RelationshipInformation;
 use Esign\Plytix\Plytix;
@@ -46,7 +45,7 @@ class ProductVariantRequestTest extends TestCase
 
         $this->assertIsArray($productVariants);
         $this->assertCount(8, $productVariants);
-        $this->assertInstanceOf(ProductVariant::class, $productVariants[0]);
+        $this->assertInstanceOf(Product::class, $productVariants[0]);
         $this->assertEquals('5ec383adf18d516fbbac718d', $productVariants[0]->id);
         $this->assertEquals('1013', $productVariants[0]->sku);
         $this->assertEquals('Backpack Venice - Coco', $productVariants[0]->label);
