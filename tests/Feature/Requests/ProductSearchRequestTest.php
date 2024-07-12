@@ -16,7 +16,7 @@ use Saloon\Http\Faking\MockClient;
 class ProductSearchRequestTest extends TestCase
 {
     /** @test */
-    public function it_can_send_a_product_categories_search_request()
+    public function it_can_send_a_product_search_request()
     {
         $plytix = new Plytix();
         $mockClient = MockClient::global([
