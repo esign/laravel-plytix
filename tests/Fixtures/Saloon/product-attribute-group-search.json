@@ -1,0 +1,57 @@
+{
+  "data": [
+    {
+      "order": 0,
+      "name": "Basic Information",
+      "id": "5d0baf02d4bf5513d19023f3",
+      "attribute_labels": ["gtin", "brand", "title", "basic_info_complete"]
+    },
+    {
+      "order": 2,
+      "name": "Rich Information",
+      "id": "5d0baf02d4bf5513d19023f4",
+      "attribute_labels": [
+        "gtin",
+        "brand",
+        "title",
+        "new_images_gallery",
+        "description",
+        "feature_description",
+        "hero_image",
+        "additional_image_galery",
+        "video_url",
+        "suggested_retail_price",
+        "type",
+        "product_type",
+        "color",
+        "rich_info_complete",
+        "bathroom_picture",
+        "collection",
+        "availability",
+        "condition"
+      ]
+    },
+    {
+      "attribute_labels": [
+        "product_weight_kg",
+        "product_length_mm",
+        "product_width_mm",
+        "product_height_mm",
+        "packed_product_weight_kg",
+        "packed_product_length_mm",
+        "packed_product_width_mm",
+        "packed_product_height_mm"
+      ],
+      "order": 1,
+      "name": "Dimensions",
+      "id": "5d0baf02d4bf5513d19023f5"
+    }
+  ],
+  "pagination": {
+    "count": 3,
+    "total_count": 3,
+    "page": 1,
+    "page_size": 100,
+    "order": ""
+  }
+}
