@@ -14,7 +14,8 @@ class ProductAttribute extends Data
         public readonly ?array $groups,
         public readonly ?string $label,
         public readonly ?string $name,
-        public readonly ?string $typeClass
+        public readonly ?string $typeClass,
+        public readonly ?string $filterType,
     ) {
     }
 }

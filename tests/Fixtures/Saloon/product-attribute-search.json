@@ -1,0 +1,788 @@
+{
+  "data": [
+    {
+      "filter_type": "MediaGalleryAttribute",
+      "groups": ["5c582a979e877f04666c649c"],
+      "id": "5c582c9c9e877f04666c64ac",
+      "label": "additional_image_galery",
+      "name": "additional image galery",
+      "type_class": "MediaGalleryAttribute"
+    },
+    {
+      "filter_type": "MediaAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf227264792045ec5e57d",
+      "label": "amazon_1000_image",
+      "name": "amazon_1000_image",
+      "type_class": "MediaAttribute"
+    },
+    {
+      "filter_type": "MediaAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf22b7eda920463fda679",
+      "label": "amazon_110_image",
+      "name": "amazon_110_image",
+      "type_class": "MediaAttribute"
+    },
+    {
+      "filter_type": "MediaAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf231264792045d16e6d8",
+      "label": "amazon_other_image_1",
+      "name": "amazon_other_image_1",
+      "type_class": "MediaAttribute"
+    },
+    {
+      "filter_type": "MediaAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf235264792045d16e6da",
+      "label": "amazon_other_image_2",
+      "name": "amazon_other_image_2",
+      "type_class": "MediaAttribute"
+    },
+    {
+      "filter_type": "MediaAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf2387eda920462da36c7",
+      "label": "amazon_other_image_3",
+      "name": "amazon_other_image_3",
+      "type_class": "MediaAttribute"
+    },
+    {
+      "filter_type": "MediaAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf23b7eda920462da36c9",
+      "label": "amazon_other_image_4",
+      "name": "amazon_other_image_4",
+      "type_class": "MediaAttribute"
+    },
+    {
+      "filter_type": "MediaAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf23f264792045ec5e57f",
+      "label": "amazon_other_image_5",
+      "name": "amazon_other_image_5",
+      "type_class": "MediaAttribute"
+    },
+    {
+      "filter_type": "MediaAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf243264792045d16e6dc",
+      "label": "amazon_other_image_6",
+      "name": "amazon_other_image_6",
+      "type_class": "MediaAttribute"
+    },
+    {
+      "filter_type": "MediaAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf247264792045cd5a743",
+      "label": "amazon_other_image_7",
+      "name": "amazon_other_image_7",
+      "type_class": "MediaAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59b5e39e877f0467b57c81"],
+      "id": "5c59b6ba9e877f0467b57c83",
+      "label": "application_place",
+      "name": "Application place",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "DropdownAttribute",
+      "groups": ["5c582a979e877f04666c649c"],
+      "id": "5c9a59a76112fe04618d71e1",
+      "label": "availability",
+      "name": "availability",
+      "options": ["in stock", "out of stock"],
+      "type_class": "DropdownAttribute"
+    },
+    {
+      "attributes": [
+        {
+          "id": "5c582c419e877f04666c64a4",
+          "label": "gtin"
+        },
+        {
+          "id": "5c582c269e877f04666c64a1",
+          "label": "brand"
+        },
+        {
+          "id": "5c582c6e9e877f04666c64a6",
+          "label": "title"
+        }
+      ],
+      "filter_type": "DecimalAttribute",
+      "groups": ["5c582a769e877f0467b57ab5"],
+      "id": "5c59b93e9e877f04666c67a3",
+      "label": "basic_info_complete",
+      "name": "Basic Info Complete ",
+      "type_class": "CompletenessAttribute"
+    },
+    {
+      "filter_type": "MediaAttribute",
+      "groups": ["5c582a979e877f04666c649c"],
+      "id": "5c6165c2e4db4e0461c9bfba",
+      "label": "bathroom_picture",
+      "name": "Display Picture",
+      "type_class": "MediaAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59b5d99e877f0467b57c80"],
+      "id": "5c59b7879e877f0467b57c89",
+      "label": "bowl_depth_mm",
+      "name": "Bowl depth (mm)",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59b5d99e877f0467b57c80"],
+      "id": "5c59b7919e877f0467b57c8b",
+      "label": "bowl_length_mm",
+      "name": "Bowl length (mm)",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59b5d99e877f0467b57c80"],
+      "id": "5c59b79c9e877f04655791f1",
+      "label": "bowl_position",
+      "name": "Bowl position",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59b5d99e877f0467b57c80"],
+      "id": "5c59b7a99e877f0467b57c8d",
+      "label": "bowl_width_mm",
+      "name": "Bowl width (mm)",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "DropdownAttribute",
+      "groups": ["5c582a769e877f0467b57ab5"],
+      "id": "5c582c269e877f04666c64a1",
+      "label": "brand",
+      "name": "Brand",
+      "options": ["Plytix"],
+      "type_class": "DropdownAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf1f4264792045d16e6d0",
+      "label": "bullet_1",
+      "name": "bullet_1",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf1f7264792045d16e6d2",
+      "label": "bullet_2",
+      "name": "bullet_2",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf1fa264792045cd5a741",
+      "label": "bullet_3",
+      "name": "bullet_3",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf1fd264792045ec5e577",
+      "label": "bullet_4",
+      "name": "bullet_4",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf2017eda920463fda671",
+      "label": "bullet_5",
+      "name": "bullet_5",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "DropdownAttribute",
+      "groups": ["5c582a979e877f04666c649c"],
+      "id": "5c617428e4db4e0461c9bffd",
+      "label": "collection",
+      "name": "Collection ",
+      "options": ["2019"],
+      "type_class": "DropdownAttribute"
+    },
+    {
+      "filter_type": "DropdownAttribute",
+      "groups": ["5c582a979e877f04666c649c"],
+      "id": "5c19ffd30b64d40460c50d1c",
+      "label": "color",
+      "name": "Color",
+      "options": [
+        "Stone",
+        "Chrome",
+        "Brushed Nickel",
+        "Black",
+        "Beige",
+        "White",
+        "Antique Bronze",
+        "Bamboo",
+        "Bisque",
+        "Copper",
+        "Natural Wood",
+        "Slate",
+        "Mocha",
+        "Glass",
+        "Silver",
+        "Bronze",
+        "Stainless Steel"
+      ],
+      "type_class": "DropdownAttribute"
+    },
+    {
+      "filter_type": "DropdownAttribute",
+      "groups": ["5c582a979e877f04666c649c"],
+      "id": "5c9a5a2f6112fe0462038617",
+      "label": "condition",
+      "name": "condition",
+      "options": ["new", "used"],
+      "type_class": "DropdownAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c582a979e877f04666c649c"],
+      "id": "5c19ffda0b64d40460c50d1e",
+      "label": "description",
+      "name": "Description",
+      "type_class": "MultilineAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59ad3d9e877f04655791c2"],
+      "id": "5c59ad8a9e877f04666c676c",
+      "label": "description_de",
+      "name": "Description DE",
+      "type_class": "MultilineAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59ad639e877f04655791c4"],
+      "id": "5c59ada39e877f04655791c8",
+      "label": "description_dk",
+      "name": "Description DK",
+      "type_class": "MultilineAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59ad5a9e877f0467b57c6a"],
+      "id": "5c59ad9d9e877f04655791c6",
+      "label": "description_es",
+      "name": "Description ES",
+      "type_class": "MultilineAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59ad4e9e877f04655791c3"],
+      "id": "5c59ad929e877f04666c676e",
+      "label": "description_it",
+      "name": "Description IT",
+      "type_class": "MultilineAttribute"
+    },
+    {
+      "filter_type": "DropdownAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf1f0264792045ec5e575",
+      "label": "display_dimensions_unit_of_measure",
+      "name": "display_dimensions_unit_of_measure",
+      "options": ["cm"],
+      "type_class": "DropdownAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c5837619e877f0465578ea4"],
+      "id": "5c19fff00b64d40460c50d20",
+      "label": "eta_stock_date",
+      "name": "ETA Stock Date",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59b5e39e877f0467b57c81"],
+      "id": "5c59b6e69e877f04666c679a",
+      "label": "faucets_finish",
+      "name": "Faucets Finish ",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c582a979e877f04666c649c"],
+      "id": "5c582c819e877f04666c64a8",
+      "label": "feature_description",
+      "name": "Feature Description",
+      "type_class": "MultilineAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59ad3d9e877f04655791c2"],
+      "id": "5c59adb79e877f04666c6770",
+      "label": "feature_description_de",
+      "name": "Feature Description DE",
+      "type_class": "MultilineAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59ad639e877f04655791c4"],
+      "id": "5c59adca9e877f0467b57c6e",
+      "label": "feature_description_dk",
+      "name": "Feature Description DK",
+      "type_class": "MultilineAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59ad5a9e877f0467b57c6a"],
+      "id": "5c59adc39e877f04666c6774",
+      "label": "feature_description_es",
+      "name": "Feature Description ES",
+      "type_class": "MultilineAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59ad4e9e877f04655791c3"],
+      "id": "5c59adbc9e877f04666c6772",
+      "label": "feature_description_it",
+      "name": "Feature Description IT",
+      "type_class": "MultilineAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59b5d99e877f0467b57c80"],
+      "id": "5c59b7b89e877f0467b57c8f",
+      "label": "fixing_kit",
+      "name": "Fixing kit",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "IntAttribute",
+      "groups": ["5c582a769e877f0467b57ab5"],
+      "id": "5c582c419e877f04666c64a4",
+      "label": "gtin",
+      "name": "GTIN",
+      "type_class": "IntAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59b5e39e877f0467b57c81"],
+      "id": "5c59b6f79e877f04655791e9",
+      "label": "handle_position",
+      "name": "Handle position",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "MediaAttribute",
+      "groups": ["5c582a979e877f04666c649c"],
+      "id": "5c582c8f9e877f04666c64aa",
+      "label": "hero_image",
+      "name": "Hero Image",
+      "type_class": "MediaAttribute"
+    },
+    {
+      "filter_type": "BooleanAttribute",
+      "groups": ["5c5837619e877f0465578ea4"],
+      "id": "5c19fffa0b64d40461359457",
+      "label": "in_stock",
+      "name": "In Stock",
+      "type_class": "BooleanAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59b5e39e877f0467b57c81"],
+      "id": "5c59b7039e877f0467b57c86",
+      "label": "installation_type",
+      "name": "Installation type",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59b5d99e877f0467b57c80"],
+      "id": "5c59b7d89e877f04655791f4",
+      "label": "installation_type_bowls",
+      "name": "Installation type Bowls",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "MediaGalleryAttribute",
+      "groups": ["5c582a979e877f04666c649c"],
+      "id": "5cde82fecd91d60469de0323",
+      "label": "new_images_gallery",
+      "name": "New Images Gallery ",
+      "type_class": "MediaGalleryAttribute"
+    },
+    {
+      "filter_type": "IntAttribute",
+      "groups": ["5c5836f59e877f0465578ea3"],
+      "id": "5c5836be9e877f0467b57acf",
+      "label": "packed_product_height_mm",
+      "name": "Packed product height (mm)",
+      "type_class": "IntAttribute"
+    },
+    {
+      "filter_type": "IntAttribute",
+      "groups": ["5c5836f59e877f0465578ea3"],
+      "id": "5c5836aa9e877f04666c64d3",
+      "label": "packed_product_length_mm",
+      "name": "Packed product length (mm)",
+      "type_class": "IntAttribute"
+    },
+    {
+      "filter_type": "DecimalAttribute",
+      "groups": ["5c5836f59e877f0465578ea3"],
+      "id": "5c5836a39e877f04666c64d1",
+      "label": "packed_product_weight_kg",
+      "name": "Packed product weight (kg)",
+      "type_class": "DecimalAttribute"
+    },
+    {
+      "filter_type": "IntAttribute",
+      "groups": ["5c5836f59e877f0465578ea3"],
+      "id": "5c5836b49e877f04666c64d5",
+      "label": "packed_product_width_mm",
+      "name": "Packed product width (mm)",
+      "type_class": "IntAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf24a264792045d16e6de",
+      "label": "parent_child",
+      "name": "parent_child",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59b5d99e877f0467b57c80"],
+      "id": "5c59b7ea9e877f04655791f6",
+      "label": "plug_and_waste",
+      "name": "Plug and Waste",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "IntAttribute",
+      "groups": ["5c5836f59e877f0465578ea3"],
+      "id": "5c58369c9e877f04666c64cf",
+      "label": "product_height_mm",
+      "name": "Product height (mm)",
+      "type_class": "IntAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf1db7eda920461360afc",
+      "label": "product_id_type",
+      "name": "product_id_type",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "IntAttribute",
+      "groups": ["5c5836f59e877f0465578ea3"],
+      "id": "5c58368f9e877f04666c64cb",
+      "label": "product_length_mm",
+      "name": "Product length (mm)",
+      "type_class": "IntAttribute"
+    },
+    {
+      "filter_type": "DropdownAttribute",
+      "groups": ["5c5837619e877f0465578ea4"],
+      "id": "5c6c072df7195104605a7aae",
+      "label": "product_lifecycle_stage",
+      "name": "Product Lifecycle Stage",
+      "options": ["Dev", "Marketing", "Active", "Inactive"],
+      "type_class": "DropdownAttribute"
+    },
+    {
+      "filter_type": "DropdownAttribute",
+      "groups": ["5c5837619e877f0465578ea4"],
+      "id": "5c6c06eef71951045ed9d3b9",
+      "label": "product_owner",
+      "name": "Product Owner",
+      "options": ["Jon", "Tim", "Kevin", "Pili", "Kresten", "Peter"],
+      "type_class": "DropdownAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf1df7eda920463fda66f",
+      "label": "product_tax_code",
+      "name": "product_tax_code",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "DropdownAttribute",
+      "groups": ["5c582a979e877f04666c649c"],
+      "id": "5c19fff45e9b0f045e7d2f2d",
+      "label": "product_type",
+      "name": "Product Type",
+      "options": [
+        "Bath Fixture",
+        "Kitchen Faucet",
+        "Kitchen Sink",
+        "Shower Fixture",
+        "Kitchen Fixture",
+        "Bathroom Faucet",
+        "Bathroom Sink"
+      ],
+      "type_class": "DropdownAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf1d6264792045cd5a73d",
+      "label": "product_type_amazon",
+      "name": "product_type_amazon",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "DecimalAttribute",
+      "groups": ["5c5836f59e877f0465578ea3"],
+      "id": "5c5836889e877f04666c64c9",
+      "label": "product_weight_kg",
+      "name": "Product weight (kg)",
+      "type_class": "DecimalAttribute"
+    },
+    {
+      "filter_type": "IntAttribute",
+      "groups": ["5c5836f59e877f0465578ea3"],
+      "id": "5c5836969e877f04666c64cd",
+      "label": "product_width_mm",
+      "name": "Product width (mm)",
+      "type_class": "IntAttribute"
+    },
+    {
+      "attributes": [
+        {
+          "id": "5c582c9c9e877f04666c64ac",
+          "label": "additional_image_galery"
+        },
+        {
+          "id": "5c19ffd30b64d40460c50d1c",
+          "label": "color"
+        },
+        {
+          "id": "5c19ffda0b64d40460c50d1e",
+          "label": "description"
+        },
+        {
+          "id": "5c582c819e877f04666c64a8",
+          "label": "feature_description"
+        },
+        {
+          "id": "5c582c8f9e877f04666c64aa",
+          "label": "hero_image"
+        },
+        {
+          "id": "5c19fff45e9b0f045e7d2f2d",
+          "label": "product_type"
+        },
+        {
+          "id": "5c582cc79e877f0465578e81",
+          "label": "suggested_retail_price"
+        },
+        {
+          "id": "5c19ffeb0b64d404624d3bcc",
+          "label": "type"
+        },
+        {
+          "id": "5c582cb89e877f0465578e7e",
+          "label": "video_url"
+        },
+        {
+          "id": "5c6165c2e4db4e0461c9bfba",
+          "label": "bathroom_picture"
+        },
+        {
+          "id": "5c617428e4db4e0461c9bffd",
+          "label": "collection"
+        }
+      ],
+      "filter_type": "DecimalAttribute",
+      "groups": ["5c582a979e877f04666c649c"],
+      "id": "5c766b364931b805abd334a0",
+      "label": "rich_info_complete",
+      "name": "Rich Info Complete",
+      "type_class": "CompletenessAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf2177eda920463fda675",
+      "label": "search_terms1",
+      "name": "search_terms1",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf21a7eda920462da36c5",
+      "label": "search_terms2",
+      "name": "search_terms2",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf21d264792045ec5e57b",
+      "label": "search_terms3",
+      "name": "search_terms3",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf220264792045d16e6d6",
+      "label": "search_terms4",
+      "name": "search_terms4",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf2247eda920463fda677",
+      "label": "search_terms5",
+      "name": "search_terms5",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "DropdownAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf1ec264792045ec5e573",
+      "label": "shipping_template",
+      "name": "shipping_template",
+      "options": ["Migrated Template"],
+      "type_class": "DropdownAttribute"
+    },
+    {
+      "filter_type": "DecimalAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf1e6264792045cd5a73f",
+      "label": "store_price",
+      "name": "store_price",
+      "type_class": "DecimalAttribute"
+    },
+    {
+      "filter_type": "DecimalAttribute",
+      "groups": ["5c582a979e877f04666c649c"],
+      "id": "5c582cc79e877f0465578e81",
+      "label": "suggested_retail_price",
+      "name": "Suggested retail price",
+      "type_class": "DecimalAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59b5d99e877f0467b57c80"],
+      "id": "5c59b7f89e877f04666c679f",
+      "label": "taphole_configuration",
+      "name": "Taphole configuration",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "DropdownAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf20a264792045ec5e579",
+      "label": "target_audience1",
+      "name": "target_audience1",
+      "options": ["women"],
+      "type_class": "DropdownAttribute"
+    },
+    {
+      "filter_type": "DropdownAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf20e264792045d16e6d4",
+      "label": "target_audience2",
+      "name": "target_audience2",
+      "options": ["men"],
+      "type_class": "DropdownAttribute"
+    },
+    {
+      "filter_type": "DropdownAttribute",
+      "groups": ["5cecf30b7eda920462da36ca"],
+      "id": "5cecf2117eda920463fda673",
+      "label": "target_audience3",
+      "name": "target_audience3",
+      "options": ["unisex"],
+      "type_class": "DropdownAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c582a769e877f0467b57ab5"],
+      "id": "5c582c6e9e877f04666c64a6",
+      "label": "title",
+      "name": "Title",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "DropdownAttribute",
+      "groups": ["5c582a979e877f04666c649c"],
+      "id": "5c19ffeb0b64d404624d3bcc",
+      "label": "type",
+      "name": "Type",
+      "options": [
+        "Handcrafted 90 Degree",
+        "Solid Surface",
+        "Handcrafted Tight Radius",
+        "3 Hole Kitchen Faucet",
+        "1 Hole Faucet Kitchen",
+        "Shower Fixture",
+        "Kitchen Faucets",
+        "Bamboo",
+        "Accessory",
+        "Under Mount",
+        "4\" Centerset Lav Faucet",
+        "Quartzite",
+        "Copper",
+        "Wide Spread 8\" Centerset Lav Faucet",
+        "Vessel Bowl",
+        "Porcelain",
+        "4 Hole Kitchen Faucet",
+        "1 Hole Lav Faucet",
+        "Standard",
+        "Top Mount"
+      ],
+      "type_class": "DropdownAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59b5e39e877f0467b57c81"],
+      "id": "5c59b70e9e877f04655791ec",
+      "label": "type_of_cartridge",
+      "name": "Type of cartridge",
+      "type_class": "TextAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c582a979e877f04666c649c"],
+      "id": "5c582cb89e877f0465578e7e",
+      "label": "video_url",
+      "name": "Video URL",
+      "type_class": "UrlAttribute"
+    },
+    {
+      "filter_type": "TextAttribute",
+      "groups": ["5c59b5d99e877f0467b57c80"],
+      "id": "5c59b80f9e877f0467b57c91",
+      "label": "washbasin_capacity_l",
+      "name": "Washbasin capacity (l)",
+      "type_class": "TextAttribute"
+    }
+  ],
+  "pagination": {
+    "count": 82,
+    "order": null,
+    "page": 1,
+    "page_size": 1000,
+    "total_count": 82
+  }
+}
