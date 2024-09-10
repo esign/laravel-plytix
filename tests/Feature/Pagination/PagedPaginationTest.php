@@ -25,6 +25,7 @@ class PagedPaginationTest extends TestCase
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
             MockResponseFixture::make(fixtureName: 'product-categories-search-page-1.json', status: 200),
             MockResponseFixture::make(fixtureName: 'product-categories-search-page-2.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'product-categories-search-page-3.json', status: 200),
         ]);
 
         $paginator = $plytix->paginate(new ProductCategoriesSearchRequest());
@@ -33,7 +34,7 @@ class PagedPaginationTest extends TestCase
             // Let's loop so the paginator fetches all pages
         }
 
-        $mockClient->assertSentCount(2, ProductCategoriesSearchRequest::class);
+        $mockClient->assertSentCount(3, ProductCategoriesSearchRequest::class);
     }
 
     /** @test */
@@ -72,6 +73,7 @@ class PagedPaginationTest extends TestCase
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
             MockResponseFixture::make(fixtureName: 'product-categories-search-page-1.json', status: 200),
             MockResponseFixture::make(fixtureName: 'product-categories-search-page-2.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'product-categories-search-page-3.json', status: 200),
         ]);
 
         $paginator = $plytix->paginate(new ProductCategoriesSearchRequest());
@@ -96,6 +98,7 @@ class PagedPaginationTest extends TestCase
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
             MockResponseFixture::make(fixtureName: 'product-categories-search-page-1.json', status: 200),
             MockResponseFixture::make(fixtureName: 'product-categories-search-page-2.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'product-categories-search-page-3.json', status: 200),
         ]);
 
         $paginator = $plytix->paginate(new ProductCategoriesSearchRequest());
