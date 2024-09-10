@@ -15,10 +15,7 @@ class PagedPaginator extends BasePagedPaginator
 
     protected function isLastPage(Response $response): bool
     {
-        $paginationPageCount = (int) $response->json('pagination.count');
-        $paginationPageSize = (int) $response->json('pagination.page_size');
-
-        return $paginationPageCount < $paginationPageSize;
+        return count($response->json('data')) < (int) $response->json('pagination.page_size');
     }
 
     protected function getPageItems(Response $response, Request $request): array
