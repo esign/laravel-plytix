@@ -5,6 +5,8 @@ This document outlines the changes made to the package to support the new API.
 ## Request changes
 - Requests targetting Plytix's v1 API have been moved from `Esign\Plytix\Requests` into the `Esign\Plytix\Requests\V1` namespace.
 - New requests have been added to target Plytix's v2 API. These requests are located in the `Esign\Plytix\Requests\V2` namespace.
+- The `Esign\Plytix\Requests\ProductVariantRequest` has been removed.
+If you wish to retrieve a list of variants related to a parent, you can do so by using the request to search for all products related to a parent.
 
 ## Response changes
 - The `Esign\Plytix\Requests\V2\ProductRequest` now returns product information in a different format.
