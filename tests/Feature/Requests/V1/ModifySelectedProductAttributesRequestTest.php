@@ -16,7 +16,7 @@ class ModifySelectedProductAttributesRequestTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'update-product-set-attribute.json', status: 201),
+            MockResponseFixture::make(fixtureName: 'V1/update-product-set-attribute.json', status: 201),
         ]);
 
         $response = $plytix->send(new ModifySelectedProductAttributesRequest('5c4ed8002f0985001e233275', [

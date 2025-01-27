@@ -17,8 +17,8 @@ class CreateProductSubcategoryRequestTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'create-product-category.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'create-product-subcategory.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/create-product-category.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/create-product-subcategory.json', status: 200),
         ]);
 
         $category = $plytix->send(new CreateProductCategoryRequest([

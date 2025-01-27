@@ -16,7 +16,7 @@ class CreateProductRequestTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'create-product.json', status: 201),
+            MockResponseFixture::make(fixtureName: 'V1/create-product.json', status: 201),
         ]);
 
         $response = $plytix->send(new CreateProductRequest([

@@ -23,9 +23,9 @@ class PagedPaginationTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-categories-search-page-1.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-categories-search-page-2.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-categories-search-page-3.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-categories-search-page-1.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-categories-search-page-2.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-categories-search-page-3.json', status: 200),
         ]);
 
         $paginator = $plytix->paginate(new ProductCategoriesSearchRequest());
@@ -71,9 +71,9 @@ class PagedPaginationTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-categories-search-page-1.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-categories-search-page-2.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-categories-search-page-3.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-categories-search-page-1.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-categories-search-page-2.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-categories-search-page-3.json', status: 200),
         ]);
 
         $paginator = $plytix->paginate(new ProductCategoriesSearchRequest());
@@ -96,9 +96,9 @@ class PagedPaginationTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-categories-search-page-1.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-categories-search-page-2.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-categories-search-page-3.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-categories-search-page-1.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-categories-search-page-2.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-categories-search-page-3.json', status: 200),
         ]);
 
         $paginator = $plytix->paginate(new ProductCategoriesSearchRequest());

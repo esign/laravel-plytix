@@ -19,7 +19,7 @@ class ProductAttributeGroupSearchRequestTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-attribute-group-search.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-attribute-group-search.json', status: 200),
         ]);
 
         $response = $plytix->send(new ProductAttributeGroupSearchRequest());
@@ -35,7 +35,7 @@ class ProductAttributeGroupSearchRequestTest extends TestCase
         $plytix = new Plytix();
         MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-attribute-group-search.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-attribute-group-search.json', status: 200),
         ]);
 
         $response = $plytix->send(new ProductAttributeGroupSearchRequest());

@@ -16,7 +16,7 @@ class AssignProductsToRelationshipRequestTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'assign-products-to-relationship.json', status: 201),
+            MockResponseFixture::make(fixtureName: 'V1/assign-products-to-relationship.json', status: 201),
         ]);
 
         $response = $plytix->send(new AssignProductsToRelationshipRequest('productid', 'relationshipid', [

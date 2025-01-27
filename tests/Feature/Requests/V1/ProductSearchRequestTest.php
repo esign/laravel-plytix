@@ -21,7 +21,7 @@ class ProductSearchRequestTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-search.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-search.json', status: 200),
         ]);
 
         $response = $plytix->send(new ProductSearchRequest());
@@ -37,7 +37,7 @@ class ProductSearchRequestTest extends TestCase
         $plytix = new Plytix();
         MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-search-with-all-attributes.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-search-with-all-attributes.json', status: 200),
         ]);
 
         $response = $plytix->send(new ProductSearchRequest());

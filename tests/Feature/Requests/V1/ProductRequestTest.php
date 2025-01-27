@@ -17,7 +17,7 @@ class ProductRequestTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product.json', status: 200),
         ]);
 
         $response = $plytix->send(new ProductRequest('5bfa8fba8544120001bd9073'));
@@ -33,7 +33,7 @@ class ProductRequestTest extends TestCase
         $plytix = new Plytix();
         MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product.json', status: 200),
         ]);
 
         $response = $plytix->send(new ProductRequest('5bfa8fba8544120001bd9073'));

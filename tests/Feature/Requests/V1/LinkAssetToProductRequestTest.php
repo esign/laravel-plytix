@@ -16,7 +16,7 @@ class LinkAssetToProductRequestTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'link-asset-to-product.json', status: 201),
+            MockResponseFixture::make(fixtureName: 'V1/link-asset-to-product.json', status: 201),
         ]);
 
         $response = $plytix->send(new LinkAssetToProductRequest('665db0db744c81d899bb315e', [

@@ -17,7 +17,7 @@ class ProductCategoriesSearchRequestTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-categories-search.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-categories-search.json', status: 200),
         ]);
 
         $response = $plytix->send(new ProductCategoriesSearchRequest());
@@ -33,7 +33,7 @@ class ProductCategoriesSearchRequestTest extends TestCase
         $plytix = new Plytix();
         MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-categories-search-with-all-attributes.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-categories-search-with-all-attributes.json', status: 200),
         ]);
 
         $response = $plytix->send(new ProductCategoriesSearchRequest());
@@ -65,7 +65,7 @@ class ProductCategoriesSearchRequestTest extends TestCase
         $plytix = new Plytix();
         MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-categories-search-with-all-attributes.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-categories-search-with-all-attributes.json', status: 200),
         ]);
 
         $paginator = $plytix->paginate(new ProductCategoriesSearchRequest());

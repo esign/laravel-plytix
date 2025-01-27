@@ -21,7 +21,7 @@ class ProductVariantRequestTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-variants.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-variants.json', status: 200),
         ]);
 
         $response = $plytix->send(new ProductVariantRequest('5ec383c6421a5e26d9ac71b1'));
@@ -37,7 +37,7 @@ class ProductVariantRequestTest extends TestCase
         $plytix = new Plytix();
         MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'product-variants.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/product-variants.json', status: 200),
         ]);
 
         $response = $plytix->send(new ProductVariantRequest('5ec383c6421a5e26d9ac71b1'));

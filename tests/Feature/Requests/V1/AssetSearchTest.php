@@ -17,7 +17,7 @@ class AssetSearchTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'asset-search.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/asset-search.json', status: 200),
         ]);
 
         $response = $plytix->send(new AssetSearchRequest());
@@ -32,7 +32,7 @@ class AssetSearchTest extends TestCase
         $plytix = new Plytix();
         MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'asset-search.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/asset-search.json', status: 200),
         ]);
 
         $response = $plytix->send(new AssetSearchRequest());
@@ -50,7 +50,7 @@ class AssetSearchTest extends TestCase
         $plytix = new Plytix();
         MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'asset-search-with-all-attributes.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/asset-search-with-all-attributes.json', status: 200),
         ]);
 
         $response = $plytix->send(new AssetSearchRequest());

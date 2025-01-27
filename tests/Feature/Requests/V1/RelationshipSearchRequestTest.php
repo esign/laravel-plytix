@@ -17,7 +17,7 @@ class RelationshipSearchRequestTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'relationship-search.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/relationship-search.json', status: 200),
         ]);
 
         $response = $plytix->send(new RelationshipSearchRequest());
@@ -32,7 +32,7 @@ class RelationshipSearchRequestTest extends TestCase
         $plytix = new Plytix();
         MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'relationship-search.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/relationship-search.json', status: 200),
         ]);
 
         $response = $plytix->send(new RelationshipSearchRequest());
@@ -50,7 +50,7 @@ class RelationshipSearchRequestTest extends TestCase
         $plytix = new Plytix();
         MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'relationship-search-with-all-attributes.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/relationship-search-with-all-attributes.json', status: 200),
         ]);
 
         $response = $plytix->send(new RelationshipSearchRequest());

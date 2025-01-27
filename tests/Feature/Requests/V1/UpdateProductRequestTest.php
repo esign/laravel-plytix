@@ -16,7 +16,7 @@ class UpdateProductRequestTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'update-product.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V1/update-product.json', status: 200),
         ]);
 
         $response = $plytix->send(new UpdateProductRequest(
