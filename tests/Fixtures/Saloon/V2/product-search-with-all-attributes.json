@@ -1,0 +1,882 @@
+{
+    "data": [
+        {
+            "_id": "6797dafb0f261cea58ec4e7f",
+            "asset_ids": [
+                "6797daeb0f261cea58ec4dd4",
+                "6797daeb0f261cea58ec4dd5",
+                "6797dae60f261cea58ec4dba",
+                "6797dae60f261cea58ec4dbb"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4db5",
+                "6797dae60f261cea58ec4d8f"
+            ],
+            "created": "2025-01-27T19:14:03.645000",
+            "label": "Plytix Logo iPhone Case, Biodegradable, Black",
+            "modified": "2025-01-27T19:14:05.414000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 4,
+            "relationships": [
+                {
+                    "links_to": [
+                        {
+                            "last_modified": "2021-01-22T09:49:31.634000",
+                            "product_id": "6797dafb0f261cea58ec4e83",
+                            "quantity": 1
+                        }
+                    ],
+                    "relationship_id": "6797dae60f261cea58ec4db7",
+                    "relationship_label": "related_items"
+                }
+            ],
+            "sku": "NSP-10003",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daeb0f261cea58ec4dd4"
+            ]
+        },
+        {
+            "_id": "6797dafb0f261cea58ec4e80",
+            "asset_ids": [
+                "6797dae80f261cea58ec4dc8",
+                "6797dae90f261cea58ec4dc9",
+                "6797dae80f261cea58ec4dc7",
+                "6797dae80f261cea58ec4dc5"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4daf",
+                "6797dae60f261cea58ec4d84"
+            ],
+            "created": "2025-01-27T19:14:03.660000",
+            "label": "Plytix Logo Bubble Sticker, Purple",
+            "modified": "2025-01-27T19:14:03.662000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "relationships": [],
+            "sku": "NSP-10025",
+            "status": "Completed",
+            "thumbnail": [
+                "6797dae80f261cea58ec4dc8"
+            ]
+        },
+        {
+            "_id": "6797dafb0f261cea58ec4e82",
+            "asset_ids": [
+                "6797dae90f261cea58ec4dcf",
+                "6797daea0f261cea58ec4dd0",
+                "6797daeb0f261cea58ec4dd1",
+                "6797dae80f261cea58ec4dc4"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4daf",
+                "6797dae60f261cea58ec4d84"
+            ],
+            "created": "2025-01-27T19:14:03.689000",
+            "label": "\"Product Sheet Superstar\" Bubble Sticker, Green",
+            "modified": "2025-01-27T19:14:03.690000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "relationships": [],
+            "sku": "NSP-10030",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daeb0f261cea58ec4dd1"
+            ]
+        },
+        {
+            "_id": "6797dafb0f261cea58ec4e83",
+            "asset_ids": [
+                "6797daeb0f261cea58ec4dd8",
+                "6797daeb0f261cea58ec4dd9"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4db2",
+                "6797dae60f261cea58ec4d92"
+            ],
+            "created": "2025-01-27T19:14:03.701000",
+            "label": "Plytix World Laptop Sleeve, Purple",
+            "modified": "2025-01-27T19:14:05.426000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 2,
+            "relationships": [
+                {
+                    "links_to": [
+                        {
+                            "last_modified": "2021-01-22T09:49:31.354000",
+                            "product_id": "6797dafb0f261cea58ec4e81",
+                            "quantity": 1
+                        },
+                        {
+                            "last_modified": "2021-01-22T09:49:31.634000",
+                            "product_id": "6797dafb0f261cea58ec4e7f",
+                            "quantity": 1
+                        }
+                    ],
+                    "relationship_id": "6797dae60f261cea58ec4db7",
+                    "relationship_label": "related_items"
+                }
+            ],
+            "sku": "NSP-10096",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daeb0f261cea58ec4dd8"
+            ]
+        },
+        {
+            "_id": "6797dafb0f261cea58ec4e7b",
+            "asset_ids": [
+                "6797dae90f261cea58ec4dcd",
+                "6797dae60f261cea58ec4db8",
+                "6797daf70f261cea58ec4e0e",
+                "6797daf70f261cea58ec4e0f",
+                "6797daf70f261cea58ec4e10",
+                "6797daf70f261cea58ec4e11",
+                "6797daf80f261cea58ec4e12",
+                "6797daf90f261cea58ec4e13",
+                "6797daf90f261cea58ec4e14",
+                "6797daf90f261cea58ec4e15"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4da3",
+                "6797dae60f261cea58ec4d9b"
+            ],
+            "created": "2025-01-27T19:14:03.569000",
+            "label": "\"Dear Excel\" Tote Bag, Organic Beige",
+            "modified": "2025-01-27T19:14:03.571000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "relationships": [],
+            "sku": "NSP-10109",
+            "status": "Completed",
+            "thumbnail": [
+                "6797dae90f261cea58ec4dcd"
+            ]
+        },
+        {
+            "_id": "6797dafb0f261cea58ec4e7d",
+            "asset_ids": [
+                "6797daeb0f261cea58ec4dda",
+                "6797dae60f261cea58ec4dc0",
+                "6797dae60f261cea58ec4dbf",
+                "6797daec0f261cea58ec4ddb",
+                "6797daf40f261cea58ec4dfd",
+                "6797daf40f261cea58ec4dfe",
+                "6797daf40f261cea58ec4dff",
+                "6797daf40f261cea58ec4e00",
+                "6797daf90f261cea58ec4e16"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4d7a",
+                "6797dae60f261cea58ec4da0"
+            ],
+            "created": "2025-01-27T19:14:03.611000",
+            "label": "Confetti Pattern Shorts, Men's",
+            "modified": "2025-01-27T19:14:03.613000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "relationships": [],
+            "sku": "NSP-10115",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daeb0f261cea58ec4dda"
+            ]
+        },
+        {
+            "_id": "6797dafb0f261cea58ec4e81",
+            "asset_ids": [
+                "6797daeb0f261cea58ec4dd2",
+                "6797daeb0f261cea58ec4dd3",
+                "6797dae60f261cea58ec4dbc",
+                "6797dae60f261cea58ec4dbe",
+                "6797dae60f261cea58ec4dbd"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4db6",
+                "6797dae60f261cea58ec4d8f"
+            ],
+            "created": "2025-01-27T19:14:03.673000",
+            "label": "Samsung Galaxy Phone Case, Plytix World",
+            "modified": "2025-01-27T19:14:05.438000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 2,
+            "relationships": [
+                {
+                    "links_to": [
+                        {
+                            "last_modified": "2021-01-22T09:49:31.354000",
+                            "product_id": "6797dafb0f261cea58ec4e83",
+                            "quantity": 1
+                        }
+                    ],
+                    "relationship_id": "6797dae60f261cea58ec4db7",
+                    "relationship_label": "related_items"
+                }
+            ],
+            "sku": "NSP-10157",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daeb0f261cea58ec4dd2"
+            ]
+        },
+        {
+            "_id": "6797dafb0f261cea58ec4e84",
+            "asset_ids": [
+                "6797dae90f261cea58ec4dce",
+                "6797daf40f261cea58ec4dfa",
+                "6797daf30f261cea58ec4df9",
+                "6797daf30f261cea58ec4df8",
+                "6797daf30f261cea58ec4df7",
+                "6797daf10f261cea58ec4df1",
+                "6797daf40f261cea58ec4dfc",
+                "6797daf40f261cea58ec4dfb"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4da8",
+                "6797dae60f261cea58ec4d7b"
+            ],
+            "created": "2025-01-27T19:14:03.715000",
+            "label": "Plytix Greatest T-Shirt, Short-Sleeve, White, Unisex",
+            "modified": "2025-01-27T19:14:05.449000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 5,
+            "relationships": [
+                {
+                    "links_to": [
+                        {
+                            "last_modified": "2021-05-28T09:59:01.028000",
+                            "product_id": "6797dafb0f261cea58ec4e7c",
+                            "quantity": 1
+                        }
+                    ],
+                    "relationship_id": "6797dae60f261cea58ec4db7",
+                    "relationship_label": "related_items"
+                }
+            ],
+            "sku": "NSP-10172",
+            "status": "Completed",
+            "thumbnail": [
+                "6797dae90f261cea58ec4dce"
+            ]
+        },
+        {
+            "_id": "6797dafb0f261cea58ec4e7c",
+            "asset_ids": [
+                "6797dae90f261cea58ec4dcb",
+                "6797daf60f261cea58ec4e06",
+                "6797daf60f261cea58ec4e07",
+                "6797daf60f261cea58ec4e08",
+                "6797daf70f261cea58ec4e09",
+                "6797daf70f261cea58ec4e0a",
+                "6797daf70f261cea58ec4e0b",
+                "6797daf70f261cea58ec4e0c",
+                "6797daf70f261cea58ec4e0d"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4daa",
+                "6797dae60f261cea58ec4d79"
+            ],
+            "created": "2025-01-27T19:14:03.596000",
+            "label": "Plytix Logo Hoodie, Black, Unisex",
+            "modified": "2025-01-27T19:14:05.460000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 6,
+            "relationships": [
+                {
+                    "links_to": [
+                        {
+                            "last_modified": "2021-05-28T09:59:01.028000",
+                            "product_id": "6797dafb0f261cea58ec4e84",
+                            "quantity": 1
+                        }
+                    ],
+                    "relationship_id": "6797dae60f261cea58ec4db7",
+                    "relationship_label": "related_items"
+                }
+            ],
+            "sku": "NSP-10250",
+            "status": "Completed",
+            "thumbnail": [
+                "6797dae90f261cea58ec4dcb"
+            ]
+        },
+        {
+            "_id": "6797dafb0f261cea58ec4e7e",
+            "asset_ids": [
+                "6797dae60f261cea58ec4dc3",
+                "6797daf40f261cea58ec4e01",
+                "6797daf40f261cea58ec4e02",
+                "6797daf40f261cea58ec4e03",
+                "6797daf40f261cea58ec4e04",
+                "6797daf50f261cea58ec4e05"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4dab",
+                "6797dae60f261cea58ec4d79"
+            ],
+            "created": "2025-01-27T19:14:03.627000",
+            "label": "Ice Cream Sweatshirt, Grey, Unisex",
+            "modified": "2025-01-27T19:14:03.630000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "relationships": [],
+            "sku": "NSP-10272",
+            "status": "Completed",
+            "thumbnail": [
+                "6797dae60f261cea58ec4dc3"
+            ]
+        },
+        {
+            "_id": "6797dafc0f261cea58ec4e98",
+            "asset_ids": [
+                "6797daeb0f261cea58ec4dd4",
+                "6797dae60f261cea58ec4db9"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4db5",
+                "6797dae60f261cea58ec4d8f"
+            ],
+            "created": "2025-01-27T19:14:04.015000",
+            "label": "Plytix Logo iPhone 11 Case, Biodegradable, Black",
+            "modified": "2025-01-27T19:14:04.017000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "parent_id": "6797dafb0f261cea58ec4e7f",
+            "relationships": [],
+            "sku": "PLT-10017",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daeb0f261cea58ec4dd4"
+            ]
+        },
+        {
+            "_id": "6797dafc0f261cea58ec4e99",
+            "asset_ids": [
+                "6797daeb0f261cea58ec4dd5"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4db5",
+                "6797dae60f261cea58ec4d8f"
+            ],
+            "created": "2025-01-27T19:14:04.029000",
+            "label": "Plytix Logo iPhone 7/8/SE Case, Biodegradable, Black",
+            "modified": "2025-01-27T19:14:04.030000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "parent_id": "6797dafb0f261cea58ec4e7f",
+            "relationships": [],
+            "sku": "PLT-10018",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daeb0f261cea58ec4dd5"
+            ]
+        },
+        {
+            "_id": "6797dafc0f261cea58ec4e9a",
+            "asset_ids": [
+                "6797daeb0f261cea58ec4dd6",
+                "6797dae60f261cea58ec4dba"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4db5",
+                "6797dae60f261cea58ec4d8f"
+            ],
+            "created": "2025-01-27T19:14:04.042000",
+            "label": "Plytix Logo iPhone X/XS Case, Biodegradable, Black",
+            "modified": "2025-01-27T19:14:04.043000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "parent_id": "6797dafb0f261cea58ec4e7f",
+            "relationships": [],
+            "sku": "PLT-10019",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daeb0f261cea58ec4dd6"
+            ]
+        },
+        {
+            "_id": "6797dafc0f261cea58ec4e9b",
+            "asset_ids": [
+                "6797daeb0f261cea58ec4dd7"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4db5",
+                "6797dae60f261cea58ec4d8f"
+            ],
+            "created": "2025-01-27T19:14:04.056000",
+            "label": "Plytix Logo iPhone XR Case, Biodegradable, Black",
+            "modified": "2025-01-27T19:14:04.058000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "parent_id": "6797dafb0f261cea58ec4e7f",
+            "relationships": [],
+            "sku": "PLT-10020",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daeb0f261cea58ec4dd7"
+            ]
+        },
+        {
+            "_id": "6797dafc0f261cea58ec4e9d",
+            "asset_ids": [
+                "6797dae80f261cea58ec4dc8",
+                "6797dae80f261cea58ec4dc6"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4daf",
+                "6797dae60f261cea58ec4d84"
+            ],
+            "created": "2025-01-27T19:14:04.087000",
+            "label": "Plytix Logo Bubble Sticker, Purple, 4x4in",
+            "modified": "2025-01-27T19:14:04.088000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "parent_id": "6797dafb0f261cea58ec4e80",
+            "relationships": [],
+            "sku": "PLT-10047",
+            "status": "Completed",
+            "thumbnail": [
+                "6797dae80f261cea58ec4dc8"
+            ]
+        },
+        {
+            "_id": "6797dafc0f261cea58ec4e9c",
+            "asset_ids": [
+                "6797dae90f261cea58ec4dca",
+                "6797dae80f261cea58ec4dc5"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4daf",
+                "6797dae60f261cea58ec4d84"
+            ],
+            "created": "2025-01-27T19:14:04.071000",
+            "label": "Plytix Logo Bubble Sticker, Purple, 3x3in",
+            "modified": "2025-01-27T19:14:04.072000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "parent_id": "6797dafb0f261cea58ec4e80",
+            "relationships": [],
+            "sku": "PLT-10049",
+            "status": "Completed",
+            "thumbnail": [
+                "6797dae90f261cea58ec4dca"
+            ]
+        },
+        {
+            "_id": "6797dafc0f261cea58ec4ea0",
+            "asset_ids": [
+                "6797dae90f261cea58ec4dcf",
+                "6797dae60f261cea58ec4dc1"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4daf",
+                "6797dae60f261cea58ec4d84"
+            ],
+            "created": "2025-01-27T19:14:04.125000",
+            "label": "\"Product Sheet Superstar\" Bubble Sticker, Green, 3x3in",
+            "modified": "2025-01-27T19:14:04.127000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "parent_id": "6797dafb0f261cea58ec4e82",
+            "relationships": [],
+            "sku": "PLT-10074",
+            "status": "Completed",
+            "thumbnail": [
+                "6797dae90f261cea58ec4dcf"
+            ]
+        },
+        {
+            "_id": "6797dafc0f261cea58ec4ea1",
+            "asset_ids": [
+                "6797daea0f261cea58ec4dd0",
+                "6797dae60f261cea58ec4dc2"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4daf",
+                "6797dae60f261cea58ec4d84"
+            ],
+            "created": "2025-01-27T19:14:04.140000",
+            "label": "\"Product Sheet Superstar\" Bubble Sticker, Green, 4x4in",
+            "modified": "2025-01-27T19:14:04.142000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "parent_id": "6797dafb0f261cea58ec4e82",
+            "relationships": [],
+            "sku": "PLT-10075",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daea0f261cea58ec4dd0"
+            ]
+        },
+        {
+            "_id": "6797dafc0f261cea58ec4ea2",
+            "asset_ids": [
+                "6797daeb0f261cea58ec4dd1",
+                "6797dae80f261cea58ec4dc4"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4daf",
+                "6797dae60f261cea58ec4d84"
+            ],
+            "created": "2025-01-27T19:14:04.155000",
+            "label": "\"Product Sheet Superstar\" Bubble Sticker, Green 5.5x5.5in",
+            "modified": "2025-01-27T19:14:04.157000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "parent_id": "6797dafb0f261cea58ec4e82",
+            "relationships": [],
+            "sku": "PLT-10076",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daeb0f261cea58ec4dd1"
+            ]
+        },
+        {
+            "_id": "6797dafc0f261cea58ec4ea3",
+            "asset_ids": [
+                "6797daeb0f261cea58ec4dd8"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4db2",
+                "6797dae60f261cea58ec4d92"
+            ],
+            "created": "2025-01-27T19:14:04.169000",
+            "label": "Plytix World Laptop Sleeve, Purple, 13in",
+            "modified": "2025-01-27T19:14:04.170000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "parent_id": "6797dafb0f261cea58ec4e83",
+            "relationships": [],
+            "sku": "PLT-10099",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daeb0f261cea58ec4dd8"
+            ]
+        },
+        {
+            "_id": "6797dafc0f261cea58ec4ea4",
+            "asset_ids": [
+                "6797daeb0f261cea58ec4dd9"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4db2",
+                "6797dae60f261cea58ec4d92"
+            ],
+            "created": "2025-01-27T19:14:04.185000",
+            "label": "Plytix World Laptop Sleeve, Purple, 15in",
+            "modified": "2025-01-27T19:14:04.186000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "parent_id": "6797dafb0f261cea58ec4e83",
+            "relationships": [],
+            "sku": "PLT-10100",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daeb0f261cea58ec4dd9"
+            ]
+        },
+        {
+            "_id": "6797dafb0f261cea58ec4e85",
+            "asset_ids": [
+                "6797dae90f261cea58ec4dcd",
+                "6797daee0f261cea58ec4de1",
+                "6797dae60f261cea58ec4db8",
+                "6797daec0f261cea58ec4ddd",
+                "6797daed0f261cea58ec4ddf",
+                "6797daed0f261cea58ec4dde",
+                "6797daec0f261cea58ec4ddc",
+                "6797daee0f261cea58ec4de3",
+                "6797daee0f261cea58ec4de0",
+                "6797daee0f261cea58ec4de2"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4da3",
+                "6797dae60f261cea58ec4d9b"
+            ],
+            "created": "2025-01-27T19:14:03.731000",
+            "label": "\"Dear Excel\" Tote Bag, Organic Beige",
+            "modified": "2025-01-27T19:14:03.733000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "parent_id": "6797dafb0f261cea58ec4e7b",
+            "relationships": [],
+            "sku": "PLT-10114",
+            "status": "Completed",
+            "thumbnail": [
+                "6797dae90f261cea58ec4dcd"
+            ]
+        },
+        {
+            "_id": "6797dafb0f261cea58ec4e8c",
+            "asset_ids": [
+                "6797daeb0f261cea58ec4dda",
+                "6797daec0f261cea58ec4ddb",
+                "6797dae60f261cea58ec4dc0",
+                "6797daee0f261cea58ec4de6",
+                "6797daee0f261cea58ec4de5",
+                "6797daee0f261cea58ec4de7",
+                "6797daee0f261cea58ec4de4",
+                "6797daee0f261cea58ec4de8",
+                "6797dae60f261cea58ec4dbf"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4d7a",
+                "6797dae60f261cea58ec4da0"
+            ],
+            "created": "2025-01-27T19:14:03.827000",
+            "label": "Confetti Pattern Shorts, Men's, XS",
+            "modified": "2025-01-27T19:14:03.831000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "parent_id": "6797dafb0f261cea58ec4e7d",
+            "relationships": [],
+            "sku": "PLT-10116",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daeb0f261cea58ec4dda"
+            ]
+        },
+        {
+            "_id": "6797dafb0f261cea58ec4e8d",
+            "asset_ids": [
+                "6797daeb0f261cea58ec4dda",
+                "6797daec0f261cea58ec4ddb",
+                "6797dae60f261cea58ec4dc0",
+                "6797daee0f261cea58ec4de6",
+                "6797daee0f261cea58ec4de5",
+                "6797daee0f261cea58ec4de7",
+                "6797daee0f261cea58ec4de4",
+                "6797daee0f261cea58ec4de8",
+                "6797dae60f261cea58ec4dbf"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4d7a",
+                "6797dae60f261cea58ec4da0"
+            ],
+            "created": "2025-01-27T19:14:03.844000",
+            "label": "Confetti Pattern Shorts, Men's, S",
+            "modified": "2025-01-27T19:14:03.847000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "parent_id": "6797dafb0f261cea58ec4e7d",
+            "relationships": [],
+            "sku": "PLT-10117",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daeb0f261cea58ec4dda"
+            ]
+        },
+        {
+            "_id": "6797dafb0f261cea58ec4e8e",
+            "asset_ids": [
+                "6797daeb0f261cea58ec4dda",
+                "6797daec0f261cea58ec4ddb",
+                "6797dae60f261cea58ec4dc0",
+                "6797daee0f261cea58ec4de6",
+                "6797daee0f261cea58ec4de5",
+                "6797daee0f261cea58ec4de7",
+                "6797daee0f261cea58ec4de4",
+                "6797daee0f261cea58ec4de8",
+                "6797dae60f261cea58ec4dbf"
+            ],
+            "attributes": {
+                "published": true
+            },
+            "category_ids": [
+                "6797dae60f261cea58ec4d7a",
+                "6797dae60f261cea58ec4da0"
+            ],
+            "created": "2025-01-27T19:14:03.861000",
+            "label": "Confetti Pattern Shorts, Men's, M",
+            "modified": "2025-01-27T19:14:03.864000",
+            "modified_user_audit": {
+                "type": "SYSTEM",
+                "user_email": "System",
+                "user_name": "System"
+            },
+            "num_variations": 0,
+            "parent_id": "6797dafb0f261cea58ec4e7d",
+            "relationships": [],
+            "sku": "PLT-10118",
+            "status": "Completed",
+            "thumbnail": [
+                "6797daeb0f261cea58ec4dda"
+            ]
+        }
+    ],
+    "pagination": {
+        "count": 49,
+        "order": "sku",
+        "page": 1,
+        "page_size": 25,
+        "total_count": 49
+    }
+}
