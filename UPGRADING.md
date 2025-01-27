@@ -14,6 +14,9 @@ See [Plytix API docs](https://apidocs.plytix.com/#2f76584a-bd65-438e-a353-302129
 - The `Esign\Plytix\Requests\V2\CreateProductRequest` now returns less product information than it used to.
 Additionally, it now returns an instance of `Esign\Plytix\DataTransferObjects\V2\Product` instead of an array.
 See [Plytix API docs](https://apidocs.plytix.com/#85e380af-7f3b-46bb-8203-3283aef081c2).
+- The `Esign\Plytix\Requests\V2\ModifySelectedProductAttributesRequest` now returns less product information than it used to.
+Additionally, it now returns an instance of `Esign\Plytix\DataTransferObjects\V2\Product` instead of an array.
+See [Plytix API docs](https://apidocs.plytix.com/#6317fd74-f753-4a2a-9b28-8752cde0f3d7).
 
 ## DataTransferObject changes
 These changes only apply if you were casting responses to DTO's using the `dto()` or `dtoOrFail()` methods.
