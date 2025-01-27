@@ -7,6 +7,7 @@ This document outlines the changes made to the package to support the new API.
 - New requests have been added to target Plytix's v2 API. These requests are located in the `Esign\Plytix\Requests\V2` namespace.
 - The `Esign\Plytix\Requests\ProductVariantRequest` has been removed.
 If you wish to retrieve a list of variants related to a parent, you can do so by using the request to search for all products related to a parent.
+- The `Esign\Plytix\Requests\ModifySelectedProductAttributesRequest` has been removed. Use the `Esign\Plytix\Requests\V2\UpdateProductRequest` request instead.
 
 ## Response changes
 - The `Esign\Plytix\Requests\V2\ProductRequest` now returns product information in a different format.
@@ -16,7 +17,7 @@ See [Plytix API docs](https://apidocs.plytix.com/#2f76584a-bd65-438e-a353-302129
 - The `Esign\Plytix\Requests\V2\CreateProductRequest` now returns less product information than it used to.
 Additionally, it now returns an instance of `Esign\Plytix\DataTransferObjects\V2\Product` instead of an array.
 See [Plytix API docs](https://apidocs.plytix.com/#85e380af-7f3b-46bb-8203-3283aef081c2).
-- The `Esign\Plytix\Requests\V2\ModifySelectedProductAttributesRequest` now returns less product information than it used to.
+- The `Esign\Plytix\Requests\V2\UpdateProductRequest` now returns less product information than it used to.
 Additionally, it now returns an instance of `Esign\Plytix\DataTransferObjects\V2\Product` instead of an array.
 See [Plytix API docs](https://apidocs.plytix.com/#6317fd74-f753-4a2a-9b28-8752cde0f3d7).
 - The `Esign\Plytix\Requests\V2\ProductSearchRequest` now returns product information in a different format.
