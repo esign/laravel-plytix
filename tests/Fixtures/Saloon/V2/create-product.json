@@ -1,0 +1,21 @@
+{
+    "data": [
+        {
+            "created": "2025-01-27T19:21:18.228000",
+            "created_user_audit": {
+                "type": "API",
+                "user_email": "Test",
+                "user_id": "6797dba1e0217500075645da",
+                "user_name": "Test"
+            },
+            "id": "6797dcaeec3db037adfe04fd",
+            "modified": "2025-01-27T19:21:18.231000",
+            "modified_user_audit": {
+                "type": "API",
+                "user_email": "Test",
+                "user_id": "6797dba1e0217500075645da",
+                "user_name": "Test"
+            }
+        }
+    ]
+}

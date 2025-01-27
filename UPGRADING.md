@@ -12,6 +12,7 @@ See [Plytix API docs](https://apidocs.plytix.com/#781906e5-f698-4d79-bb16-3994a7
 - The `Esign\Plytix\Requests\V2\AssignProductsToRelationshipRequest` now returns no content instead of the relationship information.
 See [Plytix API docs](https://apidocs.plytix.com/#2f76584a-bd65-438e-a353-302129d0ba25).
 - The `Esign\Plytix\Requests\V2\CreateProductRequest` now returns less product information than it used to.
+Additionally, it now returns an instance of `Esign\Plytix\DataTransferObjects\V2\Product` instead of an array.
 See [Plytix API docs](https://apidocs.plytix.com/#85e380af-7f3b-46bb-8203-3283aef081c2).
 
 ## DataTransferObject changes

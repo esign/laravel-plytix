@@ -16,7 +16,7 @@ class Product extends Data
     public function __construct(
         #[MapInputName(('_id'))]
         public readonly string $id,
-        public readonly string $sku,
+        public readonly ?string $sku,
         public readonly ?string $label,
         public readonly ?string $status,
         public readonly ?int $numVariations,
@@ -24,7 +24,7 @@ class Product extends Data
         public readonly ?Carbon $modified,
         #[WithCast(PlytixDateTimeCast::class)]
         public readonly ?Carbon $created,
-        public readonly array $attributes,
+        public readonly ?array $attributes,
         #[DataCollectionOf(RelationshipInformation::class)]
         public readonly ?array $relationships,
         public readonly ?array $categoryIds,
