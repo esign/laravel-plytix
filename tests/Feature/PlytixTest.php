@@ -5,9 +5,9 @@ namespace Esign\Plytix\Tests\Feature;
 use DateTimeImmutable;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\PlytixTokenAuthenticator;
-use Esign\Plytix\Requests\V1\CreateProductRequest;
+use Esign\Plytix\Requests\V2\CreateProductRequest;
 use Esign\Plytix\Requests\TokenRequest;
-use Esign\Plytix\Requests\V1\UpdateProductRequest;
+use Esign\Plytix\Requests\V2\UpdateProductRequest;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Illuminate\Support\Facades\Cache;
@@ -22,7 +22,7 @@ class PlytixTest extends TestCase
         $this->storeAccessTokenInCache(new DateTimeImmutable('+1 hour'));
         $plytix = new Plytix();
         $mockClient = MockClient::global([
-            MockResponseFixture::make(fixtureName: 'V1/create-product.json', status: 201),
+            MockResponseFixture::make(fixtureName: 'V2/create-product.json', status: 201),
         ]);
 
         $plytix->send(new CreateProductRequest(['sku' => '12345']));
@@ -38,7 +38,7 @@ class PlytixTest extends TestCase
         $plytix = new Plytix();
         $mockClient = MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'V1/create-product.json', status: 201),
+            MockResponseFixture::make(fixtureName: 'V2/create-product.json', status: 201),
         ]);
 
         $plytix->send(new CreateProductRequest(['sku' => '12345']));
@@ -53,8 +53,8 @@ class PlytixTest extends TestCase
         $this->storeAccessTokenInCache(new DateTimeImmutable('+1 hour'));
         $plytix = new Plytix();
         $mockClient = MockClient::global([
-            MockResponseFixture::make(fixtureName: 'V1/create-product.json', status: 201),
-            MockResponseFixture::make(fixtureName: 'V1/create-product.json', status: 201),
+            MockResponseFixture::make(fixtureName: 'V2/create-product.json', status: 201),
+            MockResponseFixture::make(fixtureName: 'V2/create-product.json', status: 201),
         ]);
 
         $plytix->send(new CreateProductRequest(['sku' => '12345']));
@@ -70,7 +70,7 @@ class PlytixTest extends TestCase
         $plytix = new Plytix();
         MockClient::global([
             MockResponseFixture::make(fixtureName: 'token.json', status: 200),
-            MockResponseFixture::make(fixtureName: 'V1/update-product-not-found.json', status: 404),
+            MockResponseFixture::make(fixtureName: 'V2/update-product-not-found.json', status: 404),
         ]);
 
         $this->expectException(RequestException::class);
