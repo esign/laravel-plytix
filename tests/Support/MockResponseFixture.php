@@ -14,4 +14,9 @@ class MockResponseFixture
             headers: $headers
         );
     }
+
+    public static function makeEmpty(): MockResponse
+    {
+        return new MockResponse(body: '', status: 204);
+    }
 }
