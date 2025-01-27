@@ -6,7 +6,9 @@ This document outlines the changes made to the package to support the new API.
 - Requests targetting Plytix's v1 API have been moved from `Esign\Plytix\Requests` into the `Esign\Plytix\Requests\V1` namespace.
 - New requests have been added to target Plytix's v2 API. These requests are located in the `Esign\Plytix\Requests\V2` namespace.
 
-## Upgrading from V1 to V2
+## DataTransferObject changes
+These changes only apply if you were casting responses to DTO's using the `dto()` or `dtoOrFail()` methods.
+
 ### `Esign\Plytix\DataTransferObjects\V2\Product`
 - The `categories` property has been removed. Use the `categoryIds` property instead.
 - The `assets` property has been removed. Use the `assetIds` property instead.
