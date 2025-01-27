@@ -3,7 +3,7 @@
 namespace Esign\Plytix\Tests\Feature\Pagination;
 
 use Esign\Plytix\Plytix;
-use Esign\Plytix\Requests\ProductCategoriesSearchRequest;
+use Esign\Plytix\Requests\V1\ProductCategoriesSearchRequest;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Illuminate\Support\Arr;
