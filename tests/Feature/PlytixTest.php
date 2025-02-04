@@ -13,6 +13,7 @@ use Esign\Plytix\Tests\TestCase;
 use Illuminate\Support\Facades\Cache;
 use Saloon\Exceptions\Request\RequestException;
 use Saloon\Http\Faking\MockClient;
+use Saloon\Http\Faking\MockResponse;
 
 class PlytixTest extends TestCase
 {
@@ -62,6 +63,20 @@ class PlytixTest extends TestCase
 
         $mockClient->assertNotSent(TokenRequest::class);
         $mockClient->assertSentCount(2, CreateProductRequest::class);
+    }
+
+    /** @test */
+    public function it_can_throw_an_exception_when_an_http_error_is_encoutered_while_requesting_an_access_token()
+    {
+        $plytix = new Plytix();
+        $mockClient = MockClient::global([
+            MockResponse::make(status: 503),
+        ]);
+
+        $this->expectException(RequestException::class);
+        $plytix->send(new CreateProductRequest(['sku' => '12345']));
+
+        $mockClient->assertNotSent(CreateProductRequest::class);
     }
 
     /** @test */
