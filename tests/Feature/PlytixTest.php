@@ -3,6 +3,7 @@
 namespace Esign\Plytix\Tests\Feature;
 
 use DateTimeImmutable;
+use Esign\Plytix\Enums\RateLimitingPlan;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\PlytixTokenAuthenticator;
 use Esign\Plytix\Requests\CreateProductRequest;
@@ -11,9 +12,11 @@ use Esign\Plytix\Requests\UpdateProductRequest;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Config;
 use Saloon\Exceptions\Request\RequestException;
 use Saloon\Http\Faking\MockClient;
 use Saloon\Http\Faking\MockResponse;
+use Saloon\RateLimitPlugin\Limit;
 
 class PlytixTest extends TestCase
 {
@@ -94,6 +97,25 @@ class PlytixTest extends TestCase
             productId: '5c4ed8002f0985001e233279',
             payload: []
         ));
+    }
+
+    /** @test */
+    public function it_can_use_the_rate_limiting_plan_defined_in_the_config(): void
+    {
+        Config::set('plytix.rate_limiting.plan', RateLimitingPlan::PAID);
+        $connector = new Plytix();
+
+        $limits = $connector->getLimits();
+
+        $this->assertLimitsContain(limits: $limits, allow: 20, releaseInSeconds: 10);
+        $this->assertLimitsContain(limits: $limits, allow: 5000, releaseInSeconds: 3600);
+    }
+
+    protected function assertLimitsContain(array $limits, int $allow, int $releaseInSeconds): void
+    {
+        $this->assertTrue(collect($limits)->contains(function (Limit $limit) use ($allow, $releaseInSeconds) {
+            return $limit->getAllow() === $allow && $limit->getReleaseInSeconds() === $releaseInSeconds;
+        }));
     }
 
     protected function storeAccessTokenInCache(DateTimeImmutable $expiresAt): void
