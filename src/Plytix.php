@@ -2,7 +2,8 @@
 
 namespace Esign\Plytix;
 
-use Esign\Plytix\Concerns\HasRateLimits;
+use Esign\Plytix\Enums\RateLimitingPlan;
+use Esign\Plytix\Exceptions\InvalidConfigurationException;
 use Esign\Plytix\Pagination\PagedPaginator;
 use Esign\Plytix\Requests\TokenRequest;
 use Illuminate\Support\Facades\Cache;
@@ -10,6 +11,9 @@ use Saloon\Contracts\Authenticator;
 use Saloon\Http\Connector;
 use Saloon\Http\Request;
 use Saloon\PaginationPlugin\Contracts\HasPagination;
+use Saloon\RateLimitPlugin\Contracts\RateLimitStore;
+use Saloon\RateLimitPlugin\Stores\LaravelCacheStore;
+use Saloon\RateLimitPlugin\Traits\HasRateLimits;
 use Saloon\Traits\Plugins\AlwaysThrowOnErrors;
 
 class Plytix extends Connector implements HasPagination
@@ -45,6 +49,24 @@ class Plytix extends Connector implements HasPagination
         );
 
         return $authenticator;
+    }
+
+    protected function resolveRateLimitStore(): RateLimitStore
+    {
+        return new LaravelCacheStore(
+            Cache::store(config('plytix.rate_limiting.cache_store'))
+        );
+    }
+
+    protected function resolveLimits(): array
+    {
+        $rateLimitingPlan = config('plytix.rate_limiting.plan');
+
+        if (! $rateLimitingPlan instanceof RateLimitingPlan) {
+            throw InvalidConfigurationException::invalidRateLimitingPlan();
+        }
+
+        return $rateLimitingPlan->limits();
     }
 
     public function paginate(Request $request): PagedPaginator
