@@ -81,11 +81,12 @@ The Plytix API enforces rate limits based on the subscription plan you’re on. 
 ### Sending requests
 To send requests to the Plytix API, you may use the `Esign\Plytix\Plytix` connector.    
 You can explore all the available request classes in the [src/Requests](src/Requests) directory.    
+Each version of the Plytix API, such as V1 or V2, has its own folder. Note that some requests are only accessible in certain versions.    
 Here’s an example of sending a request:
 
 ```php
 use Esign\Plytix\Plytix;
-use Esign\Plytix\Requests\ProductRequest;
+use Esign\Plytix\Requests\V2\ProductRequest;
 
 class MyCommand
 {

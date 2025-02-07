@@ -1,0 +1,80 @@
+{
+    "data": [
+        {
+            "_id": "67348b7e2bbf7d289efd7984",
+            "_created_at": "2024-11-13T11:20:30.578000",
+            "account_id": "5b30cfabe6eecf41df89a3a3",
+            "asset_ids": [
+                "671b5ffcc0c8f0e5fd21b9b9",
+                "671918ceb301fed08f12f804",
+                "671918c4b301fed08f12f803"
+            ],
+            "attributes": {
+                "boolean": true,
+                "completeness": 71.43,
+                "date": "2015-03-28T00:00:00",
+                "decimal": 12.3,
+                "integer": 123,
+                "media_gallery": [
+                    "671b5ffcc0c8f0e5fd21b9b9",
+                    "671918ceb301fed08f12f804"
+                ],
+                "media_single": [
+                    "671918c4b301fed08f12f803"
+                ],
+                "short_text": "lorem ipsum",
+                "url": "http://acme.com"
+            },
+            "category_ids": [
+                "67191873b301fed08f12f7fb"
+            ],
+            "created": "2024-11-13T11:20:30.578000",
+            "created_user_audit": {
+                "type": "API",
+                "user_email": "api",
+                "user_id": "67191ed7d6e8e300016f1414",
+                "user_name": "api"
+            },
+            "label": "Adventure mug",
+            "mark_as_deleted": false,
+            "modified": "2024-11-13T12:12:20.698000",
+            "modified_user_audit": {
+                "type": "USER",
+                "user_email": "user@email.com",
+                "user_id": "5e678436cc9e97962c059bd7",
+                "user_last_name": "God",
+                "user_name": "The Owner",
+                "user_thumb": "https://static.plytix.com/template/3.14.0/img/user-default-image.png",
+                "username": "5e678436cc9e97962c059bd7"
+            },
+            "num_variations": 0,
+            "overwritten_attributes": [],
+            "product_level": 0,
+            "relationships": [
+                {
+                    "links_to": [
+                        {
+                            "product_id": "5ec383c6421a5e26d9ac71b1",
+                            "quantity": 1,
+                            "last_modified": "2024-08-16T21:51:23.490000"
+                        },
+                        {
+                            "product_id": "5ec383c8421a5e26d9ac71bb",
+                            "quantity": 1,
+                            "last_modified": "2024-08-16T21:51:23.490000"
+                        }
+                    ],
+                    "relationship_id": "64ad0d69573a2e83cd38b146",
+                    "relationship_label": "related_products"
+                }
+            ],
+            "sku": "red adventure mug S02223",
+            "static_list_ids": [],
+            "status": "Draft",
+            "thumbnail": [
+                "671b5ffcc0c8f0e5fd21b9b9"
+            ],
+            "product_type": "SINGLE"
+        }
+    ]
+}

@@ -9,6 +9,7 @@ class PlytixDateTimeCast extends DateTimeInterfaceCast
     public const FORMATS = [
         'Y-m-d\TH:i:s.uP',
         'Y-m-d\TH:i:sP',
+        'Y-m-d\TH:i:s.u',
     ];
 
     public function __construct(
