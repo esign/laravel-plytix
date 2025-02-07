@@ -8,6 +8,8 @@ use Saloon\Http\PendingRequest;
 
 class PlytixTokenAuthenticator implements Authenticator
 {
+    private const LEEWAY_SECONDS = 5;
+
     public function __construct(
         public readonly string $token,
         public readonly DateTimeImmutable $expiresAt = new DateTimeImmutable('+15 minutes'),
@@ -21,6 +23,8 @@ class PlytixTokenAuthenticator implements Authenticator
 
     public function hasExpired(): bool
     {
-        return $this->expiresAt->getTimestamp() <= (new DateTimeImmutable())->getTimestamp();
+        $currentTimeWithLeeway = now()->subSeconds(self::LEEWAY_SECONDS);
+
+        return $this->expiresAt->getTimestamp() <= $currentTimeWithLeeway->getTimestamp();
     }
 }
