@@ -18,6 +18,7 @@ class PlytixServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom($this->configPath(), 'plytix');
         $this->app->register(LaravelDataServiceProvider::class);
+        $this->app->singleton(RateLimiter::class);
     }
 
     protected function configPath(): string

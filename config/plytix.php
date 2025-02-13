@@ -1,7 +1,5 @@
 <?php
 
-use Esign\Plytix\Enums\RateLimitingPlan;
-
 return [
     /**
      * The API key to be used for authenticating with the Plytix API.
@@ -28,11 +26,6 @@ return [
     ],
 
     'rate_limiting' => [
-        /**
-         * The rate limits to be used for the Plytix API.
-         */
-        'plan' => RateLimitingPlan::FREE,
-
         /**
          * The cache store to be used for the Plytix rate limits.
          * Use null to utilize the default cache store from the cache.php config file.
