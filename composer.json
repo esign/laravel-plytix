@@ -49,7 +49,10 @@
         "laravel": {
             "providers": [
                 "Esign\\Plytix\\PlytixServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "RateLimiter": "Esign\\Plytix\\Facades\\RateLimiter"
+            }
         }
     },
     "minimum-stability": "dev",

@@ -3,7 +3,7 @@
 namespace Esign\Plytix\Tests\Feature;
 
 use DateTimeImmutable;
-use Esign\Plytix\Enums\RateLimitingPlan;
+use Esign\Plytix\Facades\RateLimiter;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\PlytixTokenAuthenticator;
 use Esign\Plytix\Requests\V2\CreateProductRequest;
@@ -13,7 +13,6 @@ use Esign\Plytix\Tests\Support\AssertsRateLimits;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Config;
 use Saloon\Exceptions\Request\RequestException;
 use Saloon\Http\Faking\MockClient;
 use Saloon\Http\Faking\MockResponse;
@@ -105,7 +104,10 @@ class PlytixTest extends TestCase
     /** @test */
     public function it_can_use_the_rate_limiting_plan_defined_in_the_config(): void
     {
-        Config::set('plytix.rate_limiting.plan', RateLimitingPlan::PAID);
+        RateLimiter::setLimits(
+            Limit::allow(20)->everySeconds(10),
+            Limit::allow(5000)->everyHour(),
+        );
         $connector = new Plytix();
 
         $limits = $connector->getLimits();

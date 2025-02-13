@@ -2,6 +2,34 @@
 This package now supports Plytix's v2 API.
 This document outlines the changes made to the package to support the new API.
 
+## Rate limiting changes
+Configuring rate limiting through a `Esign\Plytix\Enums\RateLimitingPlan` has been removed.
+Furthermore this package does not provide any predefined rate limiting out of the box anymore.
+If you wish to keep predefined rate limits, you may do so by using the `Esign\Plytix\Facades\RateLimiter` facade.
+Please refer to the [rate limiting](/README.md#rate-limiting) section in the README on how to set things up.
+To figure out your current rate limits you can refer to the [Plytix API docs](https://apidocs.plytix.com/#api-limits).
+
+Additionally, you should remove the `plan` key from the `rate_limiting` configuration in your `config/plytix.php` file.
+```diff
+- use Esign\Plytix\Enums\RateLimitingPlan;
+
+return [
+    'rate_limiting' => [
+-        /**
+-         * The rate limits to be used for the Plytix API.
+-         */
+-        'plan' => RateLimitingPlan::FREE,
+
+        /**
+         * The cache store to be used for the Plytix rate limits.
+         * Use null to utilize the default cache store from the cache.php config file.
+         * To disable caching, you can use the 'array' store.
+         */
+        'cache_store' => null,
+    ],
+];
+```
+
 ## Request changes
 - Requests targetting Plytix's v1 API have been moved from `Esign\Plytix\Requests` into the `Esign\Plytix\Requests\V1` namespace.
 - New requests have been added to target Plytix's v2 API. These requests are located in the `Esign\Plytix\Requests\V2` namespace.

@@ -2,8 +2,6 @@
 
 namespace Esign\Plytix;
 
-use Esign\Plytix\Enums\RateLimitingPlan;
-use Esign\Plytix\Exceptions\InvalidConfigurationException;
 use Esign\Plytix\Pagination\PagedPaginator;
 use Esign\Plytix\Requests\TokenRequest;
 use Illuminate\Support\Facades\Cache;
@@ -60,13 +58,7 @@ class Plytix extends Connector implements HasPagination
 
     protected function resolveLimits(): array
     {
-        $rateLimitingPlan = config('plytix.rate_limiting.plan');
-
-        if (! $rateLimitingPlan instanceof RateLimitingPlan) {
-            throw InvalidConfigurationException::invalidRateLimitingPlan();
-        }
-
-        return $rateLimitingPlan->limits();
+        return app(RateLimiter::class)->getLimits();
     }
 
     public function paginate(Request $request): PagedPaginator

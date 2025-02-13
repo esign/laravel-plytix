@@ -25,8 +25,6 @@ The config file will be published as config/plytix.php with the following conten
 ```php
 <?php
 
-use Esign\Plytix\Enums\RateLimitingPlan;
-
 return [
     /**
      * The API key to be used for authenticating with the Plytix API.
@@ -54,11 +52,6 @@ return [
 
     'rate_limiting' => [
         /**
-         * The rate limits to be used for the Plytix API.
-         */
-        'plan' => RateLimitingPlan::FREE,
-
-        /**
          * The cache store to be used for the Plytix rate limits.
          * Use null to utilize the default cache store from the cache.php config file.
          * To disable caching, you can use the 'array' store.
@@ -76,7 +69,20 @@ This package leverages [Saloon](https://docs.saloon.dev/) for sending requests t
 After configuring your API key and password in the config file, authentication tokens are automatically managed by the package. There's no need to manually handle authentication tokens.
 
 ### Rate limiting
-The Plytix API enforces rate limits based on the subscription plan you’re on. You can configure these rate limits in the `config/plytix.php` file under the rate_limiting section.
+The Plytix API enforces rate limits based on the subscription plan you’re on.
+You can configure these rate limits in the `boot` method of your `AppServiceProvider`:
+```php
+use Esign\Plytix\Facades\RateLimiter;
+use Saloon\RateLimitPlugin\Limit;
+
+public function boot(): void
+{
+    RateLimiter::setLimits(
+        Limit::allow(20)->everySeconds(10),
+        Limit::allow(5000)->everyHour(),
+    );
+}
+```
 
 ### Sending requests
 To send requests to the Plytix API, you may use the `Esign\Plytix\Plytix` connector.    
