@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "_id": "67348b7e2bbf7d289efd7984",
+            "id": "67348b7e2bbf7d289efd7984",
             "_created_at": "2024-11-13T11:20:30.578000",
             "account_id": "5b30cfabe6eecf41df89a3a3",
             "asset_ids": [
@@ -52,7 +52,7 @@
             "product_level": 0,
             "relationships": [
                 {
-                    "links_to": [
+                    "related_products": [
                         {
                             "product_id": "5ec383c6421a5e26d9ac71b1",
                             "quantity": 1,

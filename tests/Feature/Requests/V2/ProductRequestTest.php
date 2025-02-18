@@ -25,7 +25,7 @@ class ProductRequestTest extends TestCase
         $response = $plytix->send(new ProductRequest('67348b7e2bbf7d289efd7984'));
 
         $mockClient->assertSent(ProductRequest::class);
-        $this->assertEquals('67348b7e2bbf7d289efd7984', $response->json('data.0._id'));
+        $this->assertEquals('67348b7e2bbf7d289efd7984', $response->json('data.0.id'));
         $this->assertEquals('red adventure mug S02223', $response->json('data.0.sku'));
     }
 
@@ -56,7 +56,7 @@ class ProductRequestTest extends TestCase
         $this->assertInstanceOf(RelationshipInformation::class, $product->relationships[0]);
         $this->assertEquals('64ad0d69573a2e83cd38b146', $product->relationships[0]->relationshipId);
         $this->assertEquals('related_products', $product->relationships[0]->relationshipLabel);
-        $this->assertInstanceOf(RelatedProduct::class, $product->relationships[0]->linksTo[0]);
-        $this->assertEquals('5ec383c6421a5e26d9ac71b1', $product->relationships[0]->linksTo[0]->productId);
+        $this->assertInstanceOf(RelatedProduct::class, $product->relationships[0]->relatedProducts[0]);
+        $this->assertEquals('5ec383c6421a5e26d9ac71b1', $product->relationships[0]->relatedProducts[0]->productId);
     }
 }

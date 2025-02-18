@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "_id": "6797dafb0f261cea58ec4e7f",
+            "id": "6797dafb0f261cea58ec4e7f",
             "asset_ids": [
                 "6797daeb0f261cea58ec4dd4",
                 "6797daeb0f261cea58ec4dd5",
@@ -26,7 +26,7 @@
             "num_variations": 4,
             "relationships": [
                 {
-                    "links_to": [
+                    "related_products": [
                         {
                             "last_modified": "2021-01-22T09:49:31.634000",
                             "product_id": "6797dafb0f261cea58ec4e83",
@@ -44,7 +44,7 @@
             ]
         },
         {
-            "_id": "6797dafb0f261cea58ec4e80",
+            "id": "6797dafb0f261cea58ec4e80",
             "asset_ids": [
                 "6797dae80f261cea58ec4dc8",
                 "6797dae90f261cea58ec4dc9",
@@ -75,7 +75,7 @@
             ]
         },
         {
-            "_id": "6797dafb0f261cea58ec4e82",
+            "id": "6797dafb0f261cea58ec4e82",
             "asset_ids": [
                 "6797dae90f261cea58ec4dcf",
                 "6797daea0f261cea58ec4dd0",
@@ -106,7 +106,7 @@
             ]
         },
         {
-            "_id": "6797dafb0f261cea58ec4e83",
+            "id": "6797dafb0f261cea58ec4e83",
             "asset_ids": [
                 "6797daeb0f261cea58ec4dd8",
                 "6797daeb0f261cea58ec4dd9"
@@ -129,7 +129,7 @@
             "num_variations": 2,
             "relationships": [
                 {
-                    "links_to": [
+                    "related_products": [
                         {
                             "last_modified": "2021-01-22T09:49:31.354000",
                             "product_id": "6797dafb0f261cea58ec4e81",
@@ -152,7 +152,7 @@
             ]
         },
         {
-            "_id": "6797dafb0f261cea58ec4e7b",
+            "id": "6797dafb0f261cea58ec4e7b",
             "asset_ids": [
                 "6797dae90f261cea58ec4dcd",
                 "6797dae60f261cea58ec4db8",
@@ -189,7 +189,7 @@
             ]
         },
         {
-            "_id": "6797dafb0f261cea58ec4e7d",
+            "id": "6797dafb0f261cea58ec4e7d",
             "asset_ids": [
                 "6797daeb0f261cea58ec4dda",
                 "6797dae60f261cea58ec4dc0",
@@ -225,7 +225,7 @@
             ]
         },
         {
-            "_id": "6797dafb0f261cea58ec4e81",
+            "id": "6797dafb0f261cea58ec4e81",
             "asset_ids": [
                 "6797daeb0f261cea58ec4dd2",
                 "6797daeb0f261cea58ec4dd3",
@@ -251,7 +251,7 @@
             "num_variations": 2,
             "relationships": [
                 {
-                    "links_to": [
+                    "related_products": [
                         {
                             "last_modified": "2021-01-22T09:49:31.354000",
                             "product_id": "6797dafb0f261cea58ec4e83",
@@ -269,7 +269,7 @@
             ]
         },
         {
-            "_id": "6797dafb0f261cea58ec4e84",
+            "id": "6797dafb0f261cea58ec4e84",
             "asset_ids": [
                 "6797dae90f261cea58ec4dce",
                 "6797daf40f261cea58ec4dfa",
@@ -298,7 +298,7 @@
             "num_variations": 5,
             "relationships": [
                 {
-                    "links_to": [
+                    "related_products": [
                         {
                             "last_modified": "2021-05-28T09:59:01.028000",
                             "product_id": "6797dafb0f261cea58ec4e7c",
@@ -316,7 +316,7 @@
             ]
         },
         {
-            "_id": "6797dafb0f261cea58ec4e7c",
+            "id": "6797dafb0f261cea58ec4e7c",
             "asset_ids": [
                 "6797dae90f261cea58ec4dcb",
                 "6797daf60f261cea58ec4e06",
@@ -346,7 +346,7 @@
             "num_variations": 6,
             "relationships": [
                 {
-                    "links_to": [
+                    "related_products": [
                         {
                             "last_modified": "2021-05-28T09:59:01.028000",
                             "product_id": "6797dafb0f261cea58ec4e84",
@@ -364,7 +364,7 @@
             ]
         },
         {
-            "_id": "6797dafb0f261cea58ec4e7e",
+            "id": "6797dafb0f261cea58ec4e7e",
             "asset_ids": [
                 "6797dae60f261cea58ec4dc3",
                 "6797daf40f261cea58ec4e01",
@@ -397,7 +397,7 @@
             ]
         },
         {
-            "_id": "6797dafc0f261cea58ec4e98",
+            "id": "6797dafc0f261cea58ec4e98",
             "asset_ids": [
                 "6797daeb0f261cea58ec4dd4",
                 "6797dae60f261cea58ec4db9"
@@ -427,7 +427,7 @@
             ]
         },
         {
-            "_id": "6797dafc0f261cea58ec4e99",
+            "id": "6797dafc0f261cea58ec4e99",
             "asset_ids": [
                 "6797daeb0f261cea58ec4dd5"
             ],
@@ -456,7 +456,7 @@
             ]
         },
         {
-            "_id": "6797dafc0f261cea58ec4e9a",
+            "id": "6797dafc0f261cea58ec4e9a",
             "asset_ids": [
                 "6797daeb0f261cea58ec4dd6",
                 "6797dae60f261cea58ec4dba"
@@ -486,7 +486,7 @@
             ]
         },
         {
-            "_id": "6797dafc0f261cea58ec4e9b",
+            "id": "6797dafc0f261cea58ec4e9b",
             "asset_ids": [
                 "6797daeb0f261cea58ec4dd7"
             ],
@@ -515,7 +515,7 @@
             ]
         },
         {
-            "_id": "6797dafc0f261cea58ec4e9d",
+            "id": "6797dafc0f261cea58ec4e9d",
             "asset_ids": [
                 "6797dae80f261cea58ec4dc8",
                 "6797dae80f261cea58ec4dc6"
@@ -545,7 +545,7 @@
             ]
         },
         {
-            "_id": "6797dafc0f261cea58ec4e9c",
+            "id": "6797dafc0f261cea58ec4e9c",
             "asset_ids": [
                 "6797dae90f261cea58ec4dca",
                 "6797dae80f261cea58ec4dc5"
@@ -575,7 +575,7 @@
             ]
         },
         {
-            "_id": "6797dafc0f261cea58ec4ea0",
+            "id": "6797dafc0f261cea58ec4ea0",
             "asset_ids": [
                 "6797dae90f261cea58ec4dcf",
                 "6797dae60f261cea58ec4dc1"
@@ -605,7 +605,7 @@
             ]
         },
         {
-            "_id": "6797dafc0f261cea58ec4ea1",
+            "id": "6797dafc0f261cea58ec4ea1",
             "asset_ids": [
                 "6797daea0f261cea58ec4dd0",
                 "6797dae60f261cea58ec4dc2"
@@ -635,7 +635,7 @@
             ]
         },
         {
-            "_id": "6797dafc0f261cea58ec4ea2",
+            "id": "6797dafc0f261cea58ec4ea2",
             "asset_ids": [
                 "6797daeb0f261cea58ec4dd1",
                 "6797dae80f261cea58ec4dc4"
@@ -665,7 +665,7 @@
             ]
         },
         {
-            "_id": "6797dafc0f261cea58ec4ea3",
+            "id": "6797dafc0f261cea58ec4ea3",
             "asset_ids": [
                 "6797daeb0f261cea58ec4dd8"
             ],
@@ -694,7 +694,7 @@
             ]
         },
         {
-            "_id": "6797dafc0f261cea58ec4ea4",
+            "id": "6797dafc0f261cea58ec4ea4",
             "asset_ids": [
                 "6797daeb0f261cea58ec4dd9"
             ],
@@ -723,7 +723,7 @@
             ]
         },
         {
-            "_id": "6797dafb0f261cea58ec4e85",
+            "id": "6797dafb0f261cea58ec4e85",
             "asset_ids": [
                 "6797dae90f261cea58ec4dcd",
                 "6797daee0f261cea58ec4de1",
@@ -761,7 +761,7 @@
             ]
         },
         {
-            "_id": "6797dafb0f261cea58ec4e8c",
+            "id": "6797dafb0f261cea58ec4e8c",
             "asset_ids": [
                 "6797daeb0f261cea58ec4dda",
                 "6797daec0f261cea58ec4ddb",
@@ -798,7 +798,7 @@
             ]
         },
         {
-            "_id": "6797dafb0f261cea58ec4e8d",
+            "id": "6797dafb0f261cea58ec4e8d",
             "asset_ids": [
                 "6797daeb0f261cea58ec4dda",
                 "6797daec0f261cea58ec4ddb",
@@ -835,7 +835,7 @@
             ]
         },
         {
-            "_id": "6797dafb0f261cea58ec4e8e",
+            "id": "6797dafb0f261cea58ec4e8e",
             "asset_ids": [
                 "6797daeb0f261cea58ec4dda",
                 "6797daec0f261cea58ec4ddb",

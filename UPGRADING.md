@@ -1,3 +1,16 @@
+# From 2.x to 3.x
+Breaking changes were made in Plytix's v2 API.
+
+## Product id changes
+The `_id` field on the product resources were changed back to `id`.
+In case you were using DTO's, no changes are necessary.
+In case you were using the raw response data, you should update your code to use the new field name.
+
+## Related product changes
+- The `links_to` field on the relationship information under product resources was changed back to `related_products`.
+In case you were using the DTO's, you should update your code to use `relatedProducts` instead of `linksTo`.
+In case you were using the raw response data, you should update your code to use the new field name.
+
 # From 1.x to 2.x
 This package now supports Plytix's v2 API.
 This document outlines the changes made to the package to support the new API.
