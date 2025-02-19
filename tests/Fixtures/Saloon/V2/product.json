@@ -2,12 +2,17 @@
     "data": [
         {
             "id": "67348b7e2bbf7d289efd7984",
-            "_created_at": "2024-11-13T11:20:30.578000",
             "account_id": "5b30cfabe6eecf41df89a3a3",
-            "asset_ids": [
-                "671b5ffcc0c8f0e5fd21b9b9",
-                "671918ceb301fed08f12f804",
-                "671918c4b301fed08f12f803"
+            "assets": [
+                {
+                    "id": "671b5ffcc0c8f0e5fd21b9b9"
+                },
+                {
+                    "id": "671918ceb301fed08f12f804"
+                },
+                {
+                    "id": "671918c4b301fed08f12f803"
+                }
             ],
             "attributes": {
                 "boolean": true,
@@ -25,8 +30,10 @@
                 "short_text": "lorem ipsum",
                 "url": "http://acme.com"
             },
-            "category_ids": [
-                "67191873b301fed08f12f7fb"
+            "categories": [
+                {
+                    "id": "67191873b301fed08f12f7fb"
+                }
             ],
             "created": "2024-11-13T11:20:30.578000",
             "created_user_audit": {
@@ -71,9 +78,9 @@
             "sku": "red adventure mug S02223",
             "static_list_ids": [],
             "status": "Draft",
-            "thumbnail": [
-                "671b5ffcc0c8f0e5fd21b9b9"
-            ],
+            "thumbnail": {
+                "id": "671b5ffcc0c8f0e5fd21b9b9"
+            },
             "product_type": "SINGLE"
         }
     ]

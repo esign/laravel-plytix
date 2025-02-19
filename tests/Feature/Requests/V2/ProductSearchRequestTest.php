@@ -57,11 +57,13 @@ class ProductSearchRequestTest extends TestCase
         $this->assertIsArray($products[0]->attributes);
         $this->assertEquals(true, $products[0]->attributes['published']);
         // Product categories
-        $this->assertIsArray($products[0]->categoryIds);
-        $this->assertEquals('6797dae60f261cea58ec4db5', $products[0]->categoryIds[0]);
+        $this->assertIsArray($products[0]->categories);
+        $this->assertInstanceOf(ProductCategory::class, $products[0]->categories[0]);
+        $this->assertEquals('6797dae60f261cea58ec4db5', $products[0]->categories[0]->id);
         // Assets
-        $this->assertIsArray($products[0]->assetIds);
-        $this->assertEquals('6797daeb0f261cea58ec4dd4', $products[0]->assetIds[0]);
+        $this->assertIsArray($products[0]->assets);
+        $this->assertInstanceOf(Asset::class, $products[0]->assets[0]);
+        $this->assertEquals('6797daeb0f261cea58ec4dd4', $products[0]->assets[0]->id);
         // Relationships
         $this->assertIsArray($products[0]->relationships);
         $this->assertIsArray($products[1]->relationships);

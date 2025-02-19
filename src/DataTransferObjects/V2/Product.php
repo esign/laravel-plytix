@@ -26,8 +26,10 @@ class Product extends Data
         public readonly ?array $attributes,
         #[DataCollectionOf(RelationshipInformation::class)]
         public readonly ?array $relationships,
-        public readonly ?array $categoryIds,
-        public readonly ?array $assetIds,
+        #[DataCollectionOf(ProductCategory::class)]
+        public readonly ?array $categories,
+        #[DataCollectionOf(Asset::class)]
+        public readonly ?array $assets,
     ) {
     }
 }
