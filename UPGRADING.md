@@ -1,4 +1,4 @@
-# From 1.x to 2.x
+# From 1.x to 3.x
 This package now supports Plytix's v2 API.
 This document outlines the changes made to the package to support the new API.
 
@@ -46,6 +46,7 @@ If you wish to retrieve a list of variants related to a parent, you can do so by
 - The `Esign\Plytix\Requests\ModifySelectedProductAttributesRequest` has been removed. Use the `Esign\Plytix\Requests\V2\UpdateProductRequest` request instead.
 
 ## Response changes
+<!-- TODO: these may change, check official upgrade guide on Plytix and change accordingly -->
 - The `Esign\Plytix\Requests\V2\ProductRequest` now returns product information in a different format.
 See [Plytix API docs](https://apidocs.plytix.com/#781906e5-f698-4d79-bb16-3994a7056a35).
 - The `Esign\Plytix\Requests\V2\AssignProductsToRelationshipRequest` now returns no content instead of the relationship information.
@@ -58,13 +59,3 @@ Additionally, it now returns an instance of `Esign\Plytix\DataTransferObjects\V2
 See [Plytix API docs](https://apidocs.plytix.com/#6317fd74-f753-4a2a-9b28-8752cde0f3d7).
 - The `Esign\Plytix\Requests\V2\ProductSearchRequest` now returns product information in a different format.
 See [Plytix API docs](https://apidocs.plytix.com/#0e0ad194-7132-49bf-aa8f-951ea1ed266c).
-
-## DataTransferObject changes
-These changes only apply if you were casting responses to DTO's using the `dto()` or `dtoOrFail()` methods.
-
-### `Esign\Plytix\DataTransferObjects\V2\Product`
-- The `categories` property has been removed. Use the `categoryIds` property instead.
-- The `assets` property has been removed. Use the `assetIds` property instead.
-
-### `Esign\Plytix\DataTransferObjects\V2\RelationshipInformation`
-- The `relatedProducts` property has been removed. Use the `linksTo` property instead.
