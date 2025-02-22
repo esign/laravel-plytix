@@ -2,16 +2,17 @@
 
 namespace Esign\Plytix\Tests\Feature\Request\V1;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\V1\CreateAssetRequest;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;
 
-class CreateAssetRequestTest extends TestCase
+final class CreateAssetRequestTest extends TestCase
 {
-    /** @test */
-    public function it_can_send_a_create_asset_request()
+    #[Test]
+    public function it_can_send_a_create_asset_request(): void
     {
         $plytix = new Plytix();
         $mockClient = MockClient::global([

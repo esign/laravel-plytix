@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use DateTimeImmutable;
 use Esign\Plytix\Facades\RateLimiter;
 use Esign\Plytix\Plytix;
@@ -18,12 +19,12 @@ use Saloon\Http\Faking\MockClient;
 use Saloon\Http\Faking\MockResponse;
 use Saloon\RateLimitPlugin\Limit;
 
-class PlytixTest extends TestCase
+final class PlytixTest extends TestCase
 {
     use AssertsRateLimits;
 
-    /** @test */
-    public function it_can_use_a_cached_token_when_it_is_valid()
+    #[Test]
+    public function it_can_use_a_cached_token_when_it_is_valid(): void
     {
         $this->storeAccessTokenInCache(new DateTimeImmutable('+1 hour'));
         $plytix = new Plytix();
@@ -37,8 +38,8 @@ class PlytixTest extends TestCase
         $mockClient->assertSent(CreateProductRequest::class);
     }
 
-    /** @test */
-    public function it_can_request_a_new_token_when_it_has_expired()
+    #[Test]
+    public function it_can_request_a_new_token_when_it_has_expired(): void
     {
         $this->storeAccessTokenInCache(new DateTimeImmutable('-1 minute'));
         $plytix = new Plytix();
@@ -53,8 +54,8 @@ class PlytixTest extends TestCase
         $mockClient->assertSentCount(1, CreateProductRequest::class);
     }
 
-    /** @test */
-    public function it_can_use_a_cached_token_when_performing_multiple_requests()
+    #[Test]
+    public function it_can_use_a_cached_token_when_performing_multiple_requests(): void
     {
         $this->storeAccessTokenInCache(new DateTimeImmutable('+1 hour'));
         $plytix = new Plytix();
@@ -70,8 +71,8 @@ class PlytixTest extends TestCase
         $mockClient->assertSentCount(2, CreateProductRequest::class);
     }
 
-    /** @test */
-    public function it_can_throw_an_exception_when_an_http_error_is_encoutered_while_requesting_an_access_token()
+    #[Test]
+    public function it_can_throw_an_exception_when_an_http_error_is_encoutered_while_requesting_an_access_token(): void
     {
         $plytix = new Plytix();
         $mockClient = MockClient::global([
@@ -84,8 +85,8 @@ class PlytixTest extends TestCase
         $mockClient->assertNotSent(CreateProductRequest::class);
     }
 
-    /** @test */
-    public function it_can_throw_an_exception_when_an_http_error_is_encoutered()
+    #[Test]
+    public function it_can_throw_an_exception_when_an_http_error_is_encoutered(): void
     {
         $plytix = new Plytix();
         MockClient::global([
@@ -101,7 +102,7 @@ class PlytixTest extends TestCase
         ));
     }
 
-    /** @test */
+    #[Test]
     public function it_can_use_the_rate_limiting_plan_defined_in_the_config(): void
     {
         RateLimiter::setLimits(

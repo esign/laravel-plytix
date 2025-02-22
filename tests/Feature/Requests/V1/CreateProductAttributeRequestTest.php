@@ -2,16 +2,17 @@
 
 namespace Esign\Plytix\Tests\Feature\Request\V1;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\V1\CreateProductAttributeRequest;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;
 
-class CreateProductAttributeRequestTest extends TestCase
+final class CreateProductAttributeRequestTest extends TestCase
 {
-    /** @test */
-    public function it_can_send_a_create_product_attribute_request()
+    #[Test]
+    public function it_can_send_a_create_product_attribute_request(): void
     {
         $plytix = new Plytix();
         $mockClient = MockClient::global([

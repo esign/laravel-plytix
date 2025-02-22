@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature\Request\V2;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\DataTransferObjects\V2\Asset;
 use Esign\Plytix\DataTransferObjects\V2\Product;
 use Esign\Plytix\DataTransferObjects\V2\ProductCategory;
@@ -13,9 +14,9 @@ use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;
 
-class ProductSearchRequestTest extends TestCase
+final class ProductSearchRequestTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_can_send_a_product_search_request(): void
     {
         $plytix = new Plytix();
@@ -31,7 +32,7 @@ class ProductSearchRequestTest extends TestCase
         $this->assertEquals('NSP-10003', $response->json('data.0.sku'));
     }
 
-    /** @test */
+    #[Test]
     public function it_can_create_a_dto_from_a_response_with_all_attributes(): void
     {
         $plytix = new Plytix();
