@@ -12,7 +12,7 @@ use Spatie\LaravelData\Data;
 class PlytixDateTimeCastTest extends TestCase
 {
     #[Test]
-    public function it_can_cast_plytix_date_times()
+    public function it_can_cast_plytix_date_times(): void
     {
         $class = new class () extends Data {
             #[WithCast(PlytixDateTimeCast::class)]

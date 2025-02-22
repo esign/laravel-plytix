@@ -24,7 +24,7 @@ class PlytixTest extends TestCase
     use AssertsRateLimits;
 
     #[Test]
-    public function it_can_use_a_cached_token_when_it_is_valid()
+    public function it_can_use_a_cached_token_when_it_is_valid(): void
     {
         $this->storeAccessTokenInCache(new DateTimeImmutable('+1 hour'));
         $plytix = new Plytix();
@@ -39,7 +39,7 @@ class PlytixTest extends TestCase
     }
 
     #[Test]
-    public function it_can_request_a_new_token_when_it_has_expired()
+    public function it_can_request_a_new_token_when_it_has_expired(): void
     {
         $this->storeAccessTokenInCache(new DateTimeImmutable('-1 minute'));
         $plytix = new Plytix();
@@ -55,7 +55,7 @@ class PlytixTest extends TestCase
     }
 
     #[Test]
-    public function it_can_use_a_cached_token_when_performing_multiple_requests()
+    public function it_can_use_a_cached_token_when_performing_multiple_requests(): void
     {
         $this->storeAccessTokenInCache(new DateTimeImmutable('+1 hour'));
         $plytix = new Plytix();
@@ -72,7 +72,7 @@ class PlytixTest extends TestCase
     }
 
     #[Test]
-    public function it_can_throw_an_exception_when_an_http_error_is_encoutered_while_requesting_an_access_token()
+    public function it_can_throw_an_exception_when_an_http_error_is_encoutered_while_requesting_an_access_token(): void
     {
         $plytix = new Plytix();
         $mockClient = MockClient::global([
@@ -86,7 +86,7 @@ class PlytixTest extends TestCase
     }
 
     #[Test]
-    public function it_can_throw_an_exception_when_an_http_error_is_encoutered()
+    public function it_can_throw_an_exception_when_an_http_error_is_encoutered(): void
     {
         $plytix = new Plytix();
         MockClient::global([

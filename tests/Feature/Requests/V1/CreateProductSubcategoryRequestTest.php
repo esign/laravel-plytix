@@ -13,7 +13,7 @@ use Saloon\Http\Faking\MockClient;
 class CreateProductSubcategoryRequestTest extends TestCase
 {
     #[Test]
-    public function it_can_send_a_create_product_subcategory_request()
+    public function it_can_send_a_create_product_subcategory_request(): void
     {
         $plytix = new Plytix();
         $mockClient = MockClient::global([
