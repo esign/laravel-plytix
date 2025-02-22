@@ -10,7 +10,7 @@ use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;
 
-class RelationshipSearchRequestTest extends TestCase
+final class RelationshipSearchRequestTest extends TestCase
 {
     #[Test]
     public function it_can_send_a_relationship_search_request(): void

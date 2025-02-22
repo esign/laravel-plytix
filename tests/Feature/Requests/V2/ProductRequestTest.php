@@ -12,7 +12,7 @@ use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;
 
-class ProductRequestTest extends TestCase
+final class ProductRequestTest extends TestCase
 {
     #[Test]
     public function it_can_send_a_product_request(): void

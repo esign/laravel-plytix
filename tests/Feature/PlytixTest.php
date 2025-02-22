@@ -19,7 +19,7 @@ use Saloon\Http\Faking\MockClient;
 use Saloon\Http\Faking\MockResponse;
 use Saloon\RateLimitPlugin\Limit;
 
-class PlytixTest extends TestCase
+final class PlytixTest extends TestCase
 {
     use AssertsRateLimits;
 

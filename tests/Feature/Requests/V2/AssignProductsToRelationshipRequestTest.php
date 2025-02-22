@@ -9,7 +9,7 @@ use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;
 
-class AssignProductsToRelationshipRequestTest extends TestCase
+final class AssignProductsToRelationshipRequestTest extends TestCase
 {
     #[Test]
     public function it_can_assign_products_to_relationship(): void

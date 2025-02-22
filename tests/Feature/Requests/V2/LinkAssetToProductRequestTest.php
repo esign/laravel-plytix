@@ -9,7 +9,7 @@ use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;
 
-class LinkAssetToProductRequestTest extends TestCase
+final class LinkAssetToProductRequestTest extends TestCase
 {
     #[Test]
     public function it_can_link_asset_to_product(): void
