@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature\DataTransferObjects\Casts;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\DataTransferObjects\Casts\PlytixDateTimeCast;
 use Esign\Plytix\Tests\TestCase;
 use Illuminate\Support\Carbon;
@@ -10,7 +11,7 @@ use Spatie\LaravelData\Data;
 
 class PlytixDateTimeCastTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_can_cast_plytix_date_times()
     {
         $class = new class () extends Data {

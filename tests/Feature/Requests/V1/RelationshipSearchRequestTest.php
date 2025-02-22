@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature\Request\V1;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\DataTransferObjects\V1\Relationship;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\V1\RelationshipSearchRequest;
@@ -11,7 +12,7 @@ use Saloon\Http\Faking\MockClient;
 
 class RelationshipSearchRequestTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_can_send_a_relationship_search_request()
     {
         $plytix = new Plytix();
@@ -26,7 +27,7 @@ class RelationshipSearchRequestTest extends TestCase
         $this->assertEquals('64ad0d69573a2e83cd38b146', $response->json('data.0.id'));
     }
 
-    /** @test */
+    #[Test]
     public function it_can_generate_a_dto_from_a_response_with_minimum_attributes()
     {
         $plytix = new Plytix();
@@ -44,7 +45,7 @@ class RelationshipSearchRequestTest extends TestCase
         $this->assertEquals('64ad0d69573a2e83cd38b146', $relationships[0]->id);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_generate_a_dto_from_a_response_with_all_attributes()
     {
         $plytix = new Plytix();

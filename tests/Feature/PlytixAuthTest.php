@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\PlytixAuth;
 use Esign\Plytix\Tests\Support\AssertsRateLimits;
 use Esign\Plytix\Tests\TestCase;
@@ -11,7 +12,7 @@ class PlytixAuthTest extends TestCase
 {
     use AssertsRateLimits;
 
-    /** @test */
+    #[Test]
     public function it_can_respect_rate_limiting(): void
     {
         $connector = new PlytixAuth();
