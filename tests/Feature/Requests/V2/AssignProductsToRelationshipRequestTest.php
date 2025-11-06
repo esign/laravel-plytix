@@ -2,16 +2,17 @@
 
 namespace Esign\Plytix\Tests\Feature\Request\V2;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\V2\AssignProductsToRelationshipRequest;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;
 
-class AssignProductsToRelationshipRequestTest extends TestCase
+final class AssignProductsToRelationshipRequestTest extends TestCase
 {
-    /** @test */
-    public function it_can_assign_products_to_relationship()
+    #[Test]
+    public function it_can_assign_products_to_relationship(): void
     {
         $plytix = new Plytix();
         $mockClient = MockClient::global([

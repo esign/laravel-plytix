@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature\Request\V1;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\DataTransferObjects\V1\ProductCategory;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\V1\ProductCategoriesSearchRequest;
@@ -9,10 +10,10 @@ use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;
 
-class ProductCategoriesSearchRequestTest extends TestCase
+final class ProductCategoriesSearchRequestTest extends TestCase
 {
-    /** @test */
-    public function it_can_send_a_product_categories_search_request()
+    #[Test]
+    public function it_can_send_a_product_categories_search_request(): void
     {
         $plytix = new Plytix();
         $mockClient = MockClient::global([
@@ -27,8 +28,8 @@ class ProductCategoriesSearchRequestTest extends TestCase
         $this->assertEquals('Kitchen Sinks', $response->json('data.0.name'));
     }
 
-    /** @test */
-    public function it_can_create_a_dto_from_a_response_with_all_attributes()
+    #[Test]
+    public function it_can_create_a_dto_from_a_response_with_all_attributes(): void
     {
         $plytix = new Plytix();
         MockClient::global([
@@ -59,8 +60,8 @@ class ProductCategoriesSearchRequestTest extends TestCase
         $this->assertEquals('random-category-1', $productCategories[0]->slug);
     }
 
-    /** @test */
-    public function it_can_create_a_dto_from_a_paginated_response()
+    #[Test]
+    public function it_can_create_a_dto_from_a_paginated_response(): void
     {
         $plytix = new Plytix();
         MockClient::global([

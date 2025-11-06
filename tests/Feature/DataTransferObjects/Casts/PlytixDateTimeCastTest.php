@@ -2,16 +2,17 @@
 
 namespace Esign\Plytix\Tests\Feature\DataTransferObjects\Casts;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\DataTransferObjects\Casts\PlytixDateTimeCast;
 use Esign\Plytix\Tests\TestCase;
 use Illuminate\Support\Carbon;
 use Spatie\LaravelData\Attributes\WithCast;
 use Spatie\LaravelData\Data;
 
-class PlytixDateTimeCastTest extends TestCase
+final class PlytixDateTimeCastTest extends TestCase
 {
-    /** @test */
-    public function it_can_cast_plytix_date_times()
+    #[Test]
+    public function it_can_cast_plytix_date_times(): void
     {
         $class = new class () extends Data {
             #[WithCast(PlytixDateTimeCast::class)]
