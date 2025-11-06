@@ -8,7 +8,7 @@ use Esign\Plytix\Tests\Support\AssertsRateLimits;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\RateLimitPlugin\Limit;
 
-class PlytixAuthTest extends TestCase
+final class PlytixAuthTest extends TestCase
 {
     use AssertsRateLimits;
 

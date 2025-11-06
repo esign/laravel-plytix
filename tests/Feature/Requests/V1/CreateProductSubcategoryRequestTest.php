@@ -10,7 +10,7 @@ use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;
 
-class CreateProductSubcategoryRequestTest extends TestCase
+final class CreateProductSubcategoryRequestTest extends TestCase
 {
     #[Test]
     public function it_can_send_a_create_product_subcategory_request(): void

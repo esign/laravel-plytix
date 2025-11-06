@@ -16,7 +16,7 @@ use Saloon\Http\Response;
 use Saloon\PaginationPlugin\Contracts\Paginatable;
 use Saloon\Traits\Body\HasJsonBody;
 
-class PagedPaginationTest extends TestCase
+final class PagedPaginationTest extends TestCase
 {
     #[Test]
     public function it_can_loop_through_each_page_until_no_results_are_left(): void

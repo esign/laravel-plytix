@@ -9,7 +9,7 @@ use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;
 
-class UpdateProductRequestTest extends TestCase
+final class UpdateProductRequestTest extends TestCase
 {
     #[Test]
     public function it_can_send_an_update_product_request(): void

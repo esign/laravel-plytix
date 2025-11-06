@@ -9,7 +9,7 @@ use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;
 
-class CreateProductAttributeRequestTest extends TestCase
+final class CreateProductAttributeRequestTest extends TestCase
 {
     #[Test]
     public function it_can_send_a_create_product_attribute_request(): void

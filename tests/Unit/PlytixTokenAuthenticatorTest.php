@@ -6,7 +6,7 @@ use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\PlytixTokenAuthenticator;
 use Esign\Plytix\Tests\TestCase;
 
-class PlytixTokenAuthenticatorTest extends TestCase
+final class PlytixTokenAuthenticatorTest extends TestCase
 {
     #[Test]
     public function it_can_respect_a_leeway_when_checking_if_an_access_token_has_expired(): void
