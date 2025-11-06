@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature\Request\V1;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\V1\CreateProductCategoryRequest;
 use Esign\Plytix\Requests\V1\CreateProductSubcategoryRequest;
@@ -9,10 +10,10 @@ use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;
 
-class CreateProductSubcategoryRequestTest extends TestCase
+final class CreateProductSubcategoryRequestTest extends TestCase
 {
-    /** @test */
-    public function it_can_send_a_create_product_subcategory_request()
+    #[Test]
+    public function it_can_send_a_create_product_subcategory_request(): void
     {
         $plytix = new Plytix();
         $mockClient = MockClient::global([

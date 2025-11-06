@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature\Request\V1;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\DataTransferObjects\V1\ProductAttribute;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\V1\ProductAttributeSearchRequest;
@@ -9,10 +10,10 @@ use Esign\Plytix\Tests\Support\MockResponseFixture;
 use Esign\Plytix\Tests\TestCase;
 use Saloon\Http\Faking\MockClient;
 
-class ProductAttributeSearchRequestTest extends TestCase
+final class ProductAttributeSearchRequestTest extends TestCase
 {
-    /** @test */
-    public function it_can_send_a_product_attirubte_search_request()
+    #[Test]
+    public function it_can_send_a_product_attirubte_search_request(): void
     {
         $plytix = new Plytix();
         $mockClient = MockClient::global([
@@ -27,8 +28,8 @@ class ProductAttributeSearchRequestTest extends TestCase
         $this->assertEquals('additional_image_galery', $response->json('data.0.label'));
     }
 
-    /** @test */
-    public function it_can_create_a_dto_from_a_response()
+    #[Test]
+    public function it_can_create_a_dto_from_a_response(): void
     {
         $plytix = new Plytix();
         MockClient::global([
