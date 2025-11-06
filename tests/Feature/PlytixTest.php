@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use DateTimeImmutable;
 use Esign\Plytix\Facades\RateLimiter;
 use Esign\Plytix\Plytix;
@@ -22,7 +23,7 @@ class PlytixTest extends TestCase
 {
     use AssertsRateLimits;
 
-    /** @test */
+    #[Test]
     public function it_can_use_a_cached_token_when_it_is_valid()
     {
         $this->storeAccessTokenInCache(new DateTimeImmutable('+1 hour'));
@@ -37,7 +38,7 @@ class PlytixTest extends TestCase
         $mockClient->assertSent(CreateProductRequest::class);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_request_a_new_token_when_it_has_expired()
     {
         $this->storeAccessTokenInCache(new DateTimeImmutable('-1 minute'));
@@ -53,7 +54,7 @@ class PlytixTest extends TestCase
         $mockClient->assertSentCount(1, CreateProductRequest::class);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_use_a_cached_token_when_performing_multiple_requests()
     {
         $this->storeAccessTokenInCache(new DateTimeImmutable('+1 hour'));
@@ -70,7 +71,7 @@ class PlytixTest extends TestCase
         $mockClient->assertSentCount(2, CreateProductRequest::class);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_throw_an_exception_when_an_http_error_is_encoutered_while_requesting_an_access_token()
     {
         $plytix = new Plytix();
@@ -84,7 +85,7 @@ class PlytixTest extends TestCase
         $mockClient->assertNotSent(CreateProductRequest::class);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_throw_an_exception_when_an_http_error_is_encoutered()
     {
         $plytix = new Plytix();
@@ -101,7 +102,7 @@ class PlytixTest extends TestCase
         ));
     }
 
-    /** @test */
+    #[Test]
     public function it_can_use_the_rate_limiting_plan_defined_in_the_config(): void
     {
         RateLimiter::setLimits(

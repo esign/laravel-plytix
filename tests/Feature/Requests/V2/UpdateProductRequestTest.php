@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature\Request\V2;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\V2\UpdateProductRequest;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
@@ -10,7 +11,7 @@ use Saloon\Http\Faking\MockClient;
 
 class UpdateProductRequestTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_can_send_an_update_product_request(): void
     {
         $plytix = new Plytix();

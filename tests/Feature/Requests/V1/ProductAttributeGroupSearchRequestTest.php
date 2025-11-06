@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature\Request\V1;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\DataTransferObjects\V1\ProductAttribute;
 use Esign\Plytix\DataTransferObjects\V1\ProductAttributeGroup;
 use Esign\Plytix\Plytix;
@@ -13,7 +14,7 @@ use Saloon\Http\Faking\MockClient;
 
 class ProductAttributeGroupSearchRequestTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_can_send_a_product_attirubte_group_search_request()
     {
         $plytix = new Plytix();
@@ -29,7 +30,7 @@ class ProductAttributeGroupSearchRequestTest extends TestCase
         $this->assertEquals('Basic Information', $response->json('data.0.name'));
     }
 
-    /** @test */
+    #[Test]
     public function it_can_create_a_dto_from_a_response()
     {
         $plytix = new Plytix();

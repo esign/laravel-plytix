@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature\Request\V1;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\DataTransferObjects\V1\ProductCategory;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\V1\ProductCategoriesSearchRequest;
@@ -11,7 +12,7 @@ use Saloon\Http\Faking\MockClient;
 
 class ProductCategoriesSearchRequestTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_can_send_a_product_categories_search_request()
     {
         $plytix = new Plytix();
@@ -27,7 +28,7 @@ class ProductCategoriesSearchRequestTest extends TestCase
         $this->assertEquals('Kitchen Sinks', $response->json('data.0.name'));
     }
 
-    /** @test */
+    #[Test]
     public function it_can_create_a_dto_from_a_response_with_all_attributes()
     {
         $plytix = new Plytix();
@@ -59,7 +60,7 @@ class ProductCategoriesSearchRequestTest extends TestCase
         $this->assertEquals('random-category-1', $productCategories[0]->slug);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_create_a_dto_from_a_paginated_response()
     {
         $plytix = new Plytix();

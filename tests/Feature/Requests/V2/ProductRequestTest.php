@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature\Request\V2;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\DataTransferObjects\V2\Product;
 use Esign\Plytix\DataTransferObjects\V2\RelatedProduct;
 use Esign\Plytix\DataTransferObjects\V2\RelationshipInformation;
@@ -13,7 +14,7 @@ use Saloon\Http\Faking\MockClient;
 
 class ProductRequestTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_can_send_a_product_request(): void
     {
         $plytix = new Plytix();
@@ -29,7 +30,7 @@ class ProductRequestTest extends TestCase
         $this->assertEquals('red adventure mug S02223', $response->json('data.0.sku'));
     }
 
-    /** @test */
+    #[Test]
     public function it_can_create_a_dto_from_a_response(): void
     {
         $plytix = new Plytix();

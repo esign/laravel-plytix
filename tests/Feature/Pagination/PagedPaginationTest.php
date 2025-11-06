@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature\Pagination;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\V1\ProductCategoriesSearchRequest;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
@@ -17,7 +18,7 @@ use Saloon\Traits\Body\HasJsonBody;
 
 class PagedPaginationTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_can_loop_through_each_page_until_no_results_are_left()
     {
         $plytix = new Plytix();
@@ -37,7 +38,7 @@ class PagedPaginationTest extends TestCase
         $mockClient->assertSentCount(3, ProductCategoriesSearchRequest::class);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_throw_an_exception_when_the_request_class_does_not_implement_the_has_json_body_trait()
     {
         $plytix = new Plytix();
@@ -65,7 +66,7 @@ class PagedPaginationTest extends TestCase
         }
     }
 
-    /** @test */
+    #[Test]
     public function it_can_set_the_pagination_order()
     {
         $plytix = new Plytix();
@@ -90,7 +91,7 @@ class PagedPaginationTest extends TestCase
         });
     }
 
-    /** @test */
+    #[Test]
     public function it_can_use_an_empty_string_as_pagination_order_default()
     {
         $plytix = new Plytix();

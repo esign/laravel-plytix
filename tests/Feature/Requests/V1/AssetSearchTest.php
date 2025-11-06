@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature\Request\V1;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\DataTransferObjects\V1\Asset;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\V1\AssetSearchRequest;
@@ -11,7 +12,7 @@ use Saloon\Http\Faking\MockClient;
 
 class AssetSearchTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_can_send_an_asset_search_request()
     {
         $plytix = new Plytix();
@@ -26,7 +27,7 @@ class AssetSearchTest extends TestCase
         $this->assertEquals('5c483ee8eb9139000154dd5e', $response->json('data.0.id'));
     }
 
-    /** @test */
+    #[Test]
     public function it_can_generate_a_dto_from_a_response_with_minimum_attributes()
     {
         $plytix = new Plytix();
@@ -44,7 +45,7 @@ class AssetSearchTest extends TestCase
         $this->assertEquals('5c483ee8eb9139000154dd5e', $assets[0]->id);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_generate_a_dto_from_a_response_with_all_attribute()
     {
         $plytix = new Plytix();

@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature\Request\V2;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\V2\LinkAssetToProductRequest;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
@@ -10,7 +11,7 @@ use Saloon\Http\Faking\MockClient;
 
 class LinkAssetToProductRequestTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_can_link_asset_to_product(): void
     {
         $plytix = new Plytix();

@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix\Tests\Feature\Request\V1;
 
+use PHPUnit\Framework\Attributes\Test;
 use Esign\Plytix\Plytix;
 use Esign\Plytix\Requests\V1\CreateRelationshipRequest;
 use Esign\Plytix\Tests\Support\MockResponseFixture;
@@ -10,7 +11,7 @@ use Saloon\Http\Faking\MockClient;
 
 class CreateRelationshipRequestTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_can_send_a_create_relationship_request()
     {
         $plytix = new Plytix();
