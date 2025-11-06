@@ -13,7 +13,7 @@ use Saloon\Http\Faking\MockClient;
 class ProductCategoriesSearchRequestTest extends TestCase
 {
     #[Test]
-    public function it_can_send_a_product_categories_search_request()
+    public function it_can_send_a_product_categories_search_request(): void
     {
         $plytix = new Plytix();
         $mockClient = MockClient::global([
@@ -29,7 +29,7 @@ class ProductCategoriesSearchRequestTest extends TestCase
     }
 
     #[Test]
-    public function it_can_create_a_dto_from_a_response_with_all_attributes()
+    public function it_can_create_a_dto_from_a_response_with_all_attributes(): void
     {
         $plytix = new Plytix();
         MockClient::global([
@@ -61,7 +61,7 @@ class ProductCategoriesSearchRequestTest extends TestCase
     }
 
     #[Test]
-    public function it_can_create_a_dto_from_a_paginated_response()
+    public function it_can_create_a_dto_from_a_paginated_response(): void
     {
         $plytix = new Plytix();
         MockClient::global([

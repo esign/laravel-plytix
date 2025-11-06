@@ -12,7 +12,7 @@ use Saloon\Http\Faking\MockClient;
 class AssignProductsToRelationshipRequestTest extends TestCase
 {
     #[Test]
-    public function it_can_assign_products_to_relationship()
+    public function it_can_assign_products_to_relationship(): void
     {
         $plytix = new Plytix();
         $mockClient = MockClient::global([

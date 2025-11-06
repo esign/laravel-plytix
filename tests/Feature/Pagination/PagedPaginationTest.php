@@ -19,7 +19,7 @@ use Saloon\Traits\Body\HasJsonBody;
 class PagedPaginationTest extends TestCase
 {
     #[Test]
-    public function it_can_loop_through_each_page_until_no_results_are_left()
+    public function it_can_loop_through_each_page_until_no_results_are_left(): void
     {
         $plytix = new Plytix();
         $mockClient = MockClient::global([
@@ -39,7 +39,7 @@ class PagedPaginationTest extends TestCase
     }
 
     #[Test]
-    public function it_can_throw_an_exception_when_the_request_class_does_not_implement_the_has_json_body_trait()
+    public function it_can_throw_an_exception_when_the_request_class_does_not_implement_the_has_json_body_trait(): void
     {
         $plytix = new Plytix();
         MockClient::global([
@@ -67,7 +67,7 @@ class PagedPaginationTest extends TestCase
     }
 
     #[Test]
-    public function it_can_set_the_pagination_order()
+    public function it_can_set_the_pagination_order(): void
     {
         $plytix = new Plytix();
         $mockClient = MockClient::global([
@@ -92,7 +92,7 @@ class PagedPaginationTest extends TestCase
     }
 
     #[Test]
-    public function it_can_use_an_empty_string_as_pagination_order_default()
+    public function it_can_use_an_empty_string_as_pagination_order_default(): void
     {
         $plytix = new Plytix();
         $mockClient = MockClient::global([
