@@ -11,15 +11,16 @@ final class PlytixTokenAuthenticatorTest extends TestCase
     #[Test]
     public function it_can_respect_a_leeway_when_checking_if_an_access_token_has_expired(): void
     {
+        $now = now()->toImmutable();
         $plytixTokenAuthenticator = new PlytixTokenAuthenticator(
             token: 'access-token',
-            expiresAt: now()->addMinutes(15)->toImmutable()
+            expiresAt: $now->addMinutes(15)
         );
 
-        $this->travelTo(now()->addMinutes(15)->addSeconds(1));
+        $this->travelTo($now->addMinutes(14)->addSeconds(50));
         $this->assertFalse($plytixTokenAuthenticator->hasExpired());
 
-        $this->travelTo(now()->addMinutes(15)->addSeconds(5));
+        $this->travelTo($now->addMinutes(14)->addSeconds(55));
         $this->assertTrue($plytixTokenAuthenticator->hasExpired());
     }
 }
