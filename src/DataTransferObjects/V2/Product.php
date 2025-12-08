@@ -14,7 +14,6 @@ use Spatie\LaravelData\Mappers\SnakeCaseMapper;
 class Product extends Data
 {
     public function __construct(
-        #[MapInputName(('_id'))]
         public readonly string $id,
         public readonly ?string $sku,
         public readonly ?string $label,
@@ -27,8 +26,10 @@ class Product extends Data
         public readonly ?array $attributes,
         #[DataCollectionOf(RelationshipInformation::class)]
         public readonly ?array $relationships,
-        public readonly ?array $categoryIds,
-        public readonly ?array $assetIds,
+        #[DataCollectionOf(ProductCategory::class)]
+        public readonly ?array $categories,
+        #[DataCollectionOf(Asset::class)]
+        public readonly ?array $assets,
     ) {
     }
 }
