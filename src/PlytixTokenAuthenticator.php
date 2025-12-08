@@ -23,8 +23,8 @@ class PlytixTokenAuthenticator implements Authenticator
 
     public function hasExpired(): bool
     {
-        $currentTimeWithLeeway = now()->subSeconds(self::LEEWAY_SECONDS);
+        $currentTimeWithLeeway = now()->addSeconds(self::LEEWAY_SECONDS);
 
-        return $this->expiresAt->getTimestamp() <= $currentTimeWithLeeway->getTimestamp();
+        return $currentTimeWithLeeway->getTimestamp() >= $this->expiresAt->getTimestamp();
     }
 }
