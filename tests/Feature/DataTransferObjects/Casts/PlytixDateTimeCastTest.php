@@ -28,5 +28,10 @@ final class PlytixDateTimeCastTest extends TestCase
             new Carbon('2024-02-19 10:21:45'),
             $class::from(['date' => '2024-02-19T10:21:45+00:00'])->date
         );
+
+        $this->assertEquals(
+            new Carbon('2024-02-19 10:21:45'),
+            $class::from(['date' => '2024-02-19T10:21:45'])->date
+        );
     }
 }
