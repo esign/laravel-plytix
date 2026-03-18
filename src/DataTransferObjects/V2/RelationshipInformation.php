@@ -14,7 +14,7 @@ class RelationshipInformation extends Data
         public readonly string $relationshipId,
         public readonly string $relationshipLabel,
         #[DataCollectionOf(RelatedProduct::class)]
-        public readonly array $linksTo,
+        public readonly array $relatedProducts,
     ) {
     }
 }
