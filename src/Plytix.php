@@ -2,6 +2,7 @@
 
 namespace Esign\Plytix;
 
+use DateTimeImmutable;
 use Esign\Plytix\Pagination\PagedPaginator;
 use Esign\Plytix\Requests\TokenRequest;
 use Illuminate\Support\Facades\Cache;
@@ -27,7 +28,9 @@ class Plytix extends Connector implements HasPagination
     protected function defaultAuth(): ?Authenticator
     {
         $cacheStore = Cache::store(config('plytix.authenticator_cache.store'));
-        $cachedAuthenticator = $cacheStore->get(config('plytix.authenticator_cache.key'));
+        $cachedAuthenticator = $this->buildCachedAuthenticator(
+            $cacheStore->get(config('plytix.authenticator_cache.key'))
+        );
 
         if ($cachedAuthenticator instanceof PlytixTokenAuthenticator && ! $cachedAuthenticator->hasExpired()) {
             return $cachedAuthenticator;
@@ -42,11 +45,38 @@ class Plytix extends Connector implements HasPagination
 
         $cacheStore->put(
             key: config('plytix.authenticator_cache.key'),
-            value: $authenticator,
+            value: [
+                'token' => $authenticator->token,
+                'expiresAt' => $authenticator->expiresAt->getTimestamp(),
+            ],
             ttl: $authenticator->expiresAt
         );
 
         return $authenticator;
+    }
+
+    protected function buildCachedAuthenticator(mixed $cachedAuthenticator): ?PlytixTokenAuthenticator
+    {
+        if (! is_array($cachedAuthenticator)) {
+            return null;
+        }
+
+        $token = $cachedAuthenticator['token'] ?? null;
+
+        if (! is_string($token)) {
+            return null;
+        }
+
+        $expiresAt = $cachedAuthenticator['expiresAt'] ?? null;
+
+        if (! is_int($expiresAt)) {
+            return null;
+        }
+
+        return new PlytixTokenAuthenticator(
+            token: $token,
+            expiresAt: new DateTimeImmutable('@' . $expiresAt),
+        );
     }
 
     protected function resolveRateLimitStore(): RateLimitStore
