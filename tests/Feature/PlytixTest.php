@@ -55,6 +55,25 @@ final class PlytixTest extends TestCase
     }
 
     #[Test]
+    public function it_can_request_a_new_token_when_a_legacy_cached_authenticator_object_is_present(): void
+    {
+        Cache::store(config('plytix.authenticator_cache.store'))->put(
+            config('plytix.authenticator_cache.key'),
+            new PlytixTokenAuthenticator('legacy-token', new DateTimeImmutable('+1 hour')),
+        );
+        $plytix = new Plytix();
+        $mockClient = MockClient::global([
+            MockResponseFixture::make(fixtureName: 'token.json', status: 200),
+            MockResponseFixture::make(fixtureName: 'V2/create-product.json', status: 201),
+        ]);
+
+        $plytix->send(new CreateProductRequest(['sku' => '12345']));
+
+        $mockClient->assertSentCount(1, TokenRequest::class);
+        $mockClient->assertSentCount(1, CreateProductRequest::class);
+    }
+
+    #[Test]
     public function it_can_use_a_cached_token_when_performing_multiple_requests(): void
     {
         $this->storeAccessTokenInCache(new DateTimeImmutable('+1 hour'));
@@ -121,7 +140,10 @@ final class PlytixTest extends TestCase
     {
         Cache::store(config('plytix.authenticator_cache.store'))->put(
             config('plytix.authenticator_cache.key'),
-            new PlytixTokenAuthenticator('fake-token', $expiresAt),
+            [
+                'token' => 'fake-token',
+                'expiresAt' => $expiresAt->getTimestamp(),
+            ],
         );
     }
 }

@@ -28,7 +28,7 @@ final class ProductSearchRequestTest extends TestCase
         $response = $plytix->send(new ProductSearchRequest());
 
         $mockClient->assertSent(ProductSearchRequest::class);
-        $this->assertEquals('6797dafb0f261cea58ec4e7f', $response->json('data.0._id'));
+        $this->assertEquals('6797dafb0f261cea58ec4e7f', $response->json('data.0.id'));
         $this->assertEquals('NSP-10003', $response->json('data.0.sku'));
     }
 
@@ -58,20 +58,22 @@ final class ProductSearchRequestTest extends TestCase
         $this->assertIsArray($products[0]->attributes);
         $this->assertEquals(true, $products[0]->attributes['published']);
         // Product categories
-        $this->assertIsArray($products[0]->categoryIds);
-        $this->assertEquals('6797dae60f261cea58ec4db5', $products[0]->categoryIds[0]);
+        $this->assertIsArray($products[0]->categories);
+        $this->assertInstanceOf(ProductCategory::class, $products[0]->categories[0]);
+        $this->assertEquals('6797dae60f261cea58ec4db5', $products[0]->categories[0]->id);
         // Assets
-        $this->assertIsArray($products[0]->assetIds);
-        $this->assertEquals('6797daeb0f261cea58ec4dd4', $products[0]->assetIds[0]);
+        $this->assertIsArray($products[0]->assets);
+        $this->assertInstanceOf(Asset::class, $products[0]->assets[0]);
+        $this->assertEquals('6797daeb0f261cea58ec4dd4', $products[0]->assets[0]->id);
         // Relationships
         $this->assertIsArray($products[0]->relationships);
         $this->assertIsArray($products[1]->relationships);
         $this->assertInstanceOf(RelationshipInformation::class, $products[0]->relationships[0]);
         $this->assertEquals('6797dae60f261cea58ec4db7', $products[0]->relationships[0]->relationshipId);
         $this->assertEquals('related_items', $products[0]->relationships[0]->relationshipLabel);
-        $this->assertIsArray($products[0]->relationships[0]->linksTo);
-        $this->assertInstanceOf(RelatedProduct::class, $products[0]->relationships[0]->linksTo[0]);
-        $this->assertEquals('6797dafb0f261cea58ec4e83', $products[0]->relationships[0]->linksTo[0]->productId);
-        $this->assertEquals(1, $products[0]->relationships[0]->linksTo[0]->quantity);
+        $this->assertIsArray($products[0]->relationships[0]->relatedProducts);
+        $this->assertInstanceOf(RelatedProduct::class, $products[0]->relationships[0]->relatedProducts[0]);
+        $this->assertEquals('6797dafb0f261cea58ec4e83', $products[0]->relationships[0]->relatedProducts[0]->productId);
+        $this->assertEquals(1, $products[0]->relationships[0]->relatedProducts[0]->quantity);
     }
 }

@@ -10,6 +10,7 @@ class PlytixDateTimeCast extends DateTimeInterfaceCast
         'Y-m-d\TH:i:s.uP',
         'Y-m-d\TH:i:sP',
         'Y-m-d\TH:i:s.u',
+        'Y-m-d\TH:i:s',
     ];
 
     public function __construct(
