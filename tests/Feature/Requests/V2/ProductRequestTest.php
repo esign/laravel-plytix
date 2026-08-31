@@ -60,6 +60,9 @@ final class ProductRequestTest extends TestCase
         $this->assertIsArray($product->assets);
         $this->assertInstanceOf(Asset::class, $product->assets[0]);
         $this->assertEquals('671b5ffcc0c8f0e5fd21b9b9', $product->assets[0]->id);
+        // Product Thumbnail
+        $this->assertInstanceOf(Asset::class, $product->thumbnail);
+        $this->assertEquals('671b5ffcc0c8f0e5fd21b9b9', $product->thumbnail->id);
         // Product Relationships
         $this->assertInstanceOf(RelationshipInformation::class, $product->relationships[0]);
         $this->assertEquals('64ad0d69573a2e83cd38b146', $product->relationships[0]->relationshipId);
